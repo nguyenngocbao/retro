@@ -3,33 +3,23 @@ import { Option } from './type';
 export const HEADER_MENU_OPTIONS: Option[] = [
   {
     label: 'HOME',
-    value: '/'
+    value: '/',
+    blank: false
   },
   {
     label: 'GAMES',
     value: '/games',
-    children: [
-      {
-        label: 'GAME A',
-        value: '/game-a'
-      },
-      {
-        label: 'GAME B',
-        value: '/game-b'
-      }
-    ]
-  },
-  {
-    label: 'COMMUNITY',
-    value: '/community'
+    blank: false
   },
   {
     label: 'WHITEPAPER',
-    value: '/whitepaper'
+    value: 'https://whitepaper.retrocraft.io',
+    blank: true
   },
   {
-    label: 'CONNECT',
-    value: '/connect'
+    label: 'BUY $RETRO',
+    value: '',
+    blank: true
   }
 ];
 
@@ -73,7 +63,7 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
       {
         label: 'Facebook',
         value: '',
-        image: '/facebook.svg'
+        image: '/x-t.svg'
       },
       {
         label: 'Telegram',

@@ -3,4 +3,5 @@ export type Option = {
   value: string | number;
   children?: Option[];
   image?: string;
+  blank?: boolean;
 };

@@ -77,6 +77,8 @@ export const Menu: FC<MenuProps> = ({ isOpen }) => {
                     <Link
                       className="flex h-[43px] w-full items-center gap-[6px] px-[20px] lg:px-[16px]"
                       href={String(child.value)}
+                      target={child.blank ? '_blank' : ''}
+                      rel={child.blank ? 'noreferrer' : ''}
                     >
                       {child.label}
                     </Link>
