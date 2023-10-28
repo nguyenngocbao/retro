@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color: #fff;
+  width: 100vw;
+  letter-spacing: -0.31px;
+}
+
+main {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
+@layer base {
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

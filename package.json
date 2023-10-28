@@ -1,0 +1,47 @@
+{
+  "name": "retro-game",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky install",
+    "lint": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
+    "format": "npm run prettier -- --write",
+    "check-types": "tsc --project tsconfig.json --pretty --noEmit",
+    "check-format": "npm run prettier -- --list-different",
+    "validate-and-build": "npm-run-all --parallel check-types check-format lint build",
+    "validate": "npm-run-all --parallel check-types check-format && lint-staged"
+  },
+  "dependencies": {
+    "@types/react-dom": "18.2.4",
+    "clsx": "^1.2.1",
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.1.7",
+    "@types/react": "18.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.37.0",
+    "eslint-config-next": "^13.4.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.23",
+    "postcss-loader": "^7.2.4",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.0.2"
+  }
+}
