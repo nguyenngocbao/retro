@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nextjs:
+    image: retrocraft-nextjs-app
+    build: .
+    ports:
+      - "7765:3000" 
+    environment:
+      - PORT=3000
