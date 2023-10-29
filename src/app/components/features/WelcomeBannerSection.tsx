@@ -25,7 +25,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `relative h-[211px] bg-cover bg-right bg-no-repeat p-[16px] lg:h-[calc(100vh_-_97px)] lg:p-[156px_160px]`,
+        `relative h-[calc(100vh_-_60px)] bg-cover bg-right bg-no-repeat p-[16px] lg:h-[calc(100vh_-_97px)] lg:p-[156px_160px]`,
         className
       )}
       {...props}
@@ -35,14 +35,17 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
         src={
           (process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + '/trailler.mp4#t=0.1'
         }
-        className="absolute left-0 top-0 h-full w-full object-fill"
+        poster={
+          (process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + '/trailler-poster.png'
+        }
+        className="absolute left-0 top-0 h-full w-full object-cover"
         loop
         autoPlay
         muted
       />
       <div className="absolute left-0 top-0 h-full w-full bg-bg2/30"></div>
-      <div className="relative">
-        <div className="absolute left-0 top-0 h-full w-full lg:h-fit lg:w-fit lg:max-w-[534px]">
+      <div className="relative h-full">
+        <div className="absolute left-0 top-[65%] w-full lg:top-0 lg:h-fit lg:w-fit lg:max-w-[534px] lg:translate-y-[0]">
           <h1 className="text-[18px] font-bold leading-[25px] lg:text-[36px] lg:leading-[49px]">
             WELCOME TO
           </h1>

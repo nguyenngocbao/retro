@@ -8,7 +8,7 @@ export const HEADER_MENU_OPTIONS: Option[] = [
   },
   {
     label: 'GAMES',
-    value: '/games',
+    value: '/#discover-retrocaft',
     blank: false
   },
   {
@@ -61,9 +61,9 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
     value: '',
     children: [
       {
-        label: 'Facebook',
+        label: 'X',
         value: '',
-        image: '/x-t.svg'
+        image: '/x.svg'
       },
       {
         label: 'Telegram',

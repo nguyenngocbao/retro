@@ -37,24 +37,34 @@ export const Menu: FC<MenuProps> = ({ isOpen }) => {
       {PREVIOUS_OPTIONS.map((menu, i) => {
         const hasChildren = menu?.children?.length > 0;
         const Element: any = hasChildren ? 'button' : Link;
+        const currentHref = String(menu.value);
 
         return (
           <li
             key={menu.label}
             className={mergeClasses(
               'group w-full overflow-y-hidden border-t-[0.5px] border-t-grey-dark transition-all first:border-t-0 lg:relative lg:max-h-[43px] lg:flex-[1] lg:justify-end lg:overflow-visible lg:border-none',
-              isActive(menu.value) && 'text-primary3'
+              isActive(currentHref) && 'text-primary3'
             )}
           >
             <Element
               className="flex h-[43px] w-full items-center gap-[6px] px-[16px] "
-              href={String(menu.value)}
-              onClick={() =>
+              href={currentHref}
+              onClick={e => {
+                if (currentHref.includes('/#')) {
+                  document
+                    .getElementById(currentHref.split('#')[1])
+                    .scrollIntoView({
+                      behavior: 'smooth'
+                    });
+                  e.preventDefault();
+                }
+
                 setOpen(pre => {
                   pre[i] = !pre[i];
                   return [...pre];
-                })
-              }
+                });
+              }}
             >
               <span>{menu.label}</span>
               {hasChildren && <MenuArrowDownIcon />}
