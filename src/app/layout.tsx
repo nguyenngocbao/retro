@@ -1,4 +1,4 @@
-import { Noto_Sans } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 
 import { Footer } from './components/layouts/Footer';
 import { Header } from './components/layouts/Header';
@@ -10,10 +10,10 @@ export const metadata = {
   description: 'Retro Game'
 };
 
-const font = Noto_Sans({
-  subsets: ['cyrillic'],
+const font = Space_Grotesk({
+  subsets: ['latin'],
   display: 'swap',
-  variable: '--font-noto-sans',
+  variable: '--font-space-grotesk',
   weight: ['500', '600', '700']
 });
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <head></head>
       <body
         suppressHydrationWarning={true}
-        className={font.className + ' bg-bg1'}
+        className={font.className + ' bg-black'}
       >
         <Header />
         {children}

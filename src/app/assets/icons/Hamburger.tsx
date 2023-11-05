@@ -1,21 +1,33 @@
 export const HamburgerIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect x="3" y="2" width="14" height="1" fill="#BFBFBF" />
-      <rect x="2" y="3" width="16" height="1" fill="white" />
-      <rect x="1" y="4" width="18" height="1" fill="white" />
-      <rect x="3" y="8" width="14" height="1" fill="#BFBFBF" />
-      <rect x="2" y="9" width="16" height="1" fill="white" />
-      <rect x="1" y="10" width="18" height="1" fill="white" />
-      <rect x="3" y="14" width="14" height="1" fill="#BFBFBF" />
-      <rect x="2" y="15" width="16" height="1" fill="white" />
-      <rect x="1" y="16" width="18" height="1" fill="white" />
+      <path
+        d="M3 12H21"
+        stroke="#FFBE53"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3 6H21"
+        stroke="#FFBE53"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3 18H21"
+        stroke="#FFBE53"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 };

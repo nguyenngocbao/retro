@@ -8,38 +8,35 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary1: '#3B8526',
-        primary2: '#3B8526',
-        primary3: '#6BC349',
-        bg1: '#06101E',
-        bg2: '#0E192A',
-        'white-light': '#F3F3F3',
-        light: '#EAEAEA',
-        'grey-light': '#D6D6D6',
-        'grey-medium': '#BFBFBF',
-        grey: '#A9A9A9',
-        'grey-dark': '#929292',
-        'grey-black': '#424242'
+        black: '#262626',
+        secondary: '#FFBE53'
       },
       fontFamily: {
-        sans: ['var(--font-noto-sans)']
+        sans: ['var(--font-space-grotesk)']
       },
       backgroundImage: {
-        'welcome-banner': `url('${
+        'bg-title-1': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/welcome-banner.png')`,
-        'mb-feature-games': `url('${
+        }/bg-title-1.png')`,
+        'bg-title-2': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/mb-feature-games-bg.png')`,
-        'mb-join-the-world': `url('${
+        }/bg-title-2.svg')`,
+        'bg-title-3': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/mb-join-the-world.png')`,
-        'join-the-world': `url('${
+        }/bg-title-3.svg')`,
+        'bg-title-4': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/join-the-world.png')`,
-        'mb-welcome-banner': `url('${
+        }/bg-title-4.svg')`,
+        'bg-title-5': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/mb-welcome-banner.png')`
+        }/bg-title-5.svg')`,
+        bg2: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg2.png')`,
+        'bg2-gradient': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/bg2-gradient.png')`,
+        bg3: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg3.png')`,
+        bg4: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg4.png')`,
+        bg5: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg5.png')`
       }
     }
   },

@@ -14,35 +14,26 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="flex flex-col gap-[24px] bg-bg2 p-[40px_16px] lg:flex-row lg:justify-between lg:p-[28px_135px]">
-        <picture className="lg:p-[16px]">
-          <source
-            media="(min-width: 1024px)"
-            srcSet={
-              (process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') +
-              '/white-retrocraft.png'
-            }
-          />
-          <Image
-            width={254}
-            height={24}
-            src="/retrocraft.png"
-            alt="retro-game"
-            className="h-[24px] w-[254px]"
-            unoptimized
-          />
-        </picture>
-        <div className="flex flex-col gap-[16px] lg:flex-row lg:gap-[86px]">
+      <div className="relative flex flex-col gap-[24px] p-[92px_19px_41px_19px] lg:flex-row lg:justify-between lg:p-[28px_135px]">
+        <Image
+          width={136}
+          height={66}
+          src="/retrocraft.svg"
+          alt="retro-game"
+          className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%]"
+          unoptimized
+        />
+        <div className="flex flex-wrap gap-x-[33px] gap-y-[20px] lg:flex-row lg:gap-[86px]">
           {PREVIOUS_OPTIONS.map((item, i) => {
             return (
               <div key={i}>
                 <Link
                   href={String(item.value)}
-                  className="mb-[12px] block text-[18px] font-[700] lg:mb-[16px]"
+                  className="mb-[16px] block text-[16px] leading-[22px] lg:mb-[16px]"
                 >
                   {item.label}
                 </Link>
-                <ul className="flex flex-col gap-[4px]">
+                <ul className="flex flex-col gap-[4px]  text-[16px] leading-[22px]">
                   {item.children.map((childItem, i) => (
                     <li key={i}>
                       <Link
@@ -61,7 +52,7 @@ export const Footer = () => {
           <div>
             <Link
               href={String(CONTACT_US.value)}
-              className="mb-[12px] block text-[18px] font-[700] leading-[25px]"
+              className="mb-[16px] block text-[20px] font-[700] leading-[28px]"
             >
               {CONTACT_US.label}
             </Link>
@@ -89,12 +80,10 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="h-[35px] py-[8px] text-center lg:h-[55px]">
-        <p className="flex items-center justify-center gap-[4px] text-[14px] font-[600] lg:text-[16px]">
-          <CCircleIcon />
-          <span>2023 by RETROCRAFT. All Rights Reserved.</span>
-        </p>
-      </div>
+      <p className="flex h-[54px] items-center justify-center gap-[4px] bg-secondary text-center text-[16px] font-[600] leading-[22px] text-black lg:h-[55px] lg:text-[16px]">
+        <CCircleIcon />
+        <span>2023 by RETROCRAFT. All Rights Reserved.</span>
+      </p>
     </footer>
   );
 };

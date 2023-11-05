@@ -1,6 +1,5 @@
 import { FC, HTMLAttributes } from 'react';
 
-import { GamingControllerIcon } from '@/app/assets/icons/GamingController';
 import { mergeClasses } from '@/app/utils';
 
 import { Button } from '../buttons/Button';
@@ -12,24 +11,27 @@ export const JoinTheWorldSection: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `h-[224px] bg-mb-join-the-world bg-cover bg-center p-[38px_16px] text-center lg:h-[418px] lg:bg-join-the-world lg:pt-[121px]`,
+        `relative flex h-[621px] flex-col justify-end bg-bg5 bg-cover bg-center text-center lg:h-[418px] lg:pt-[121px]`,
         className
       )}
       {...props}
     >
-      <h3 className="mb-[16px] text-[16px] font-bold leading-[22px] lg:mb-[24px] lg:text-[40px] lg:leading-[54px]">
-        JOIN THE WOLRD OF RETROCRAFT
-      </h3>
-      <p className="mb-[16px] text-[12px] font-[600] leading-[16px] lg:mb-[24px] lg:text-[18px] lg:leading-[25px]">
-        With new games, new updates, and new ways to play, join one of the
-        biggest communities in gaming and start crafting today!
-      </p>
-      <Button
-        variant="primary"
-        className="mx-auto h-[43px] w-[135px] gap-[8px] lg:h-[57px] lg:w-[171px]"
-      >
-        <GamingControllerIcon className="w-[16px] lg:w-[22px]" /> PLAY NOW
-      </Button>
+      <div className="absolute bottom-[-11px] left-0 h-[202px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.87)_37.79%,_#262626_100%)]"></div>
+      <div className="absolute px-[8px] py-[94px]">
+        <div className="mb-[20px] flex h-[69px] w-full items-center justify-center bg-bg-title-5 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black">
+          JOIN THE WOLRD OF RETROCRAFT
+        </div>
+        <p className="mb-[16px] text-[16px] leading-[24px] lg:mb-[24px] lg:text-[18px] lg:leading-[25px]">
+          With new games, new updates, and new ways to play, join one of the
+          biggest communities in gaming and start crafting today!
+        </p>
+        <Button
+          variant="secondary"
+          className="mx-auto h-[50px] w-[197px] lg:h-[57px] lg:w-[171px]"
+        >
+          JOIN NOW
+        </Button>
+      </div>
     </section>
   );
 };

@@ -1,18 +1,23 @@
+'use client';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FC, HTMLAttributes, useState } from 'react';
 
+import { CloseIcon } from '@/app/assets/icons/Close';
 import { MenuArrowDownIcon } from '@/app/assets/icons/MenuArrowDown';
 import { HEADER_MENU_OPTIONS } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
 import { Button } from '../buttons/Button';
+import { Image } from '../images/Image';
 
 interface MenuProps extends HTMLAttributes<HTMLUListElement> {
   isOpen: boolean;
+  onClose: () => void;
 }
 
-export const Menu: FC<MenuProps> = ({ isOpen }) => {
+export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
   const pathname = usePathname();
   const [open, setOpen] = useState([]);
   const PREVIOUS_OPTIONS = HEADER_MENU_OPTIONS.slice(
@@ -26,109 +31,110 @@ export const Menu: FC<MenuProps> = ({ isOpen }) => {
   };
 
   return (
-    <ul
+    <section
       className={mergeClasses(
-        'fixed z-40 flex w-full flex-col bg-bg1 pt-[24px] text-[14px] font-bold text-white transition-all lg:static lg:z-auto lg:w-auto lg:flex-row lg:items-center lg:bg-transparent lg:pt-[unset]',
-        isOpen
-          ? 'h-[calc(100vh_-_60px)] max-h-[calc(100vh_-_60px)]'
-          : 'h-0  max-h-0 overflow-hidden pt-0 lg:h-auto lg:max-h-[unset] lg:overflow-visible lg:pt-0'
+        'fixed top-0 z-40 flex h-screen w-[287px] flex-col items-end bg-black p-[60px_23px] text-[20px] font-bold leading-[28px] text-white transition-all lg:static lg:z-auto lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:bg-transparent lg:p-[unset] lg:pt-[unset]',
+        isOpen ? 'right-0' : 'right-[-100%]'
       )}
     >
-      {PREVIOUS_OPTIONS.map((menu, i) => {
-        const hasChildren = menu?.children?.length > 0;
-        const Element: any = hasChildren ? 'button' : Link;
-        const currentHref = String(menu.value);
+      {isOpen}
+      <Button
+        onClick={() => onClose()}
+        variant="primary"
+        className="absolute left-[18px] h-[28px] w-[28px] lg:hidden"
+      >
+        <CloseIcon />
+      </Button>
+      <Image
+        width={136}
+        className="h-[48px] w-[98px] lg:hidden lg:h-[32px] lg:w-[338px]"
+        height={66}
+        src="/retrocraft.svg"
+        alt="retro-game"
+        unoptimized
+      />
+      <div className="mb-[23px] mt-[29px] h-[1px] w-full bg-white lg:hidden"></div>
+      <ul className="h-full w-full text-right lg:flex lg:h-[66px] lg:w-auto lg:items-center lg:justify-end lg:gap-[27px] lg:border lg:border-secondary lg:pl-[48px]">
+        {PREVIOUS_OPTIONS.map((menu, i) => {
+          const hasChildren = menu?.children?.length > 0;
+          const Element: any = hasChildren ? 'button' : Link;
+          const currentHref = String(menu.value);
 
-        return (
-          <li
-            key={menu.label}
-            className={mergeClasses(
-              'group w-full overflow-y-hidden border-t-[0.5px] border-t-grey-dark transition-all first:border-t-0 lg:relative lg:max-h-[43px] lg:flex-[1] lg:justify-end lg:overflow-visible lg:border-none',
-              isActive(currentHref) && 'text-primary3'
-            )}
-          >
-            <Element
-              className="flex h-[43px] w-full items-center gap-[6px] px-[16px] "
-              href={currentHref}
-              onClick={e => {
-                if (currentHref.includes('/#')) {
-                  document
-                    .getElementById(currentHref.split('#')[1])
-                    .scrollIntoView({
-                      behavior: 'smooth'
-                    });
-                  e.preventDefault();
-                }
-
-                setOpen(pre => {
-                  pre[i] = !pre[i];
-                  return [...pre];
-                });
-              }}
-            >
-              <span>{menu.label}</span>
-              {hasChildren && <MenuArrowDownIcon />}
-            </Element>
-            <ul
+          return (
+            <li
+              key={menu.label}
               className={mergeClasses(
-                'max-h-0 overflow-hidden transition-all lg:group-hover:block lg:group-hover:max-h-[200px]',
-                open[i] && 'max-h-[200px] lg:max-h-0'
+                'lg:h-full',
+                isActive(currentHref) && 'text-primary3'
               )}
             >
-              {menu?.children?.map(child => {
-                return (
-                  <li
-                    key={menu.label}
-                    className={mergeClasses(
-                      'h-[43px] w-full bg-bg2  lg:flex-[1] lg:justify-end',
-                      isActive(child.value) && 'text-primary3'
-                    )}
-                  >
-                    <Link
-                      className="flex h-[43px] w-full items-center gap-[6px] px-[20px] lg:px-[16px]"
-                      href={String(child.value)}
-                      target={child.blank ? '_blank' : ''}
-                      rel={child.blank ? 'noreferrer' : ''}
+              <Element
+                className="flex h-[52px] w-full items-center justify-end gap-[6px] px-[16px] lg:h-full "
+                href={currentHref}
+                onClick={e => {
+                  if (currentHref.includes('/#')) {
+                    document
+                      .getElementById(currentHref.split('#')[1])
+                      .scrollIntoView({
+                        behavior: 'smooth'
+                      });
+                    e.preventDefault();
+                  }
+
+                  setOpen(pre => {
+                    pre[i] = !pre[i];
+                    return [...pre];
+                  });
+                }}
+              >
+                <span>{menu.label}</span>
+                {hasChildren && <MenuArrowDownIcon />}
+              </Element>
+              <ul
+                className={mergeClasses(
+                  'max-h-0 overflow-hidden transition-all lg:group-hover:block lg:group-hover:max-h-[200px]',
+                  open[i] && 'max-h-[200px] lg:max-h-0'
+                )}
+              >
+                {menu?.children?.map(child => {
+                  return (
+                    <li
+                      key={menu.label}
+                      className={mergeClasses(
+                        'h-[52px] w-full bg-bg2 lg:h-full lg:flex-[1] lg:justify-end',
+                        isActive(child.value) && 'text-primary3'
+                      )}
                     >
-                      {child.label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </li>
-        );
-      })}
+                      <Link
+                        className="flex h-[43px] w-full items-center gap-[6px] px-[20px] lg:px-[16px]"
+                        href={String(child.value)}
+                        target={child.blank ? '_blank' : ''}
+                        rel={child.blank ? 'noreferrer' : ''}
+                      >
+                        {child.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </li>
+          );
+        })}
 
-      <li
-        className={mergeClasses(
-          'h-[43px] w-full border-t-[0.5px] border-t-grey-dark first:border-t-0 lg:hidden lg:flex-[1] lg:justify-end lg:border-none',
-          isActive(CONNECT_OPTION.value) && 'text-primary3'
-        )}
-      >
-        <Link
-          className="flex h-full w-full items-center px-[16px]"
-          href={String(CONNECT_OPTION.value)}
+        <li
+          className={mergeClasses(
+            'mt-[12px] h-[52px] bg-secondary text-black lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
+            isActive(CONNECT_OPTION.value) && 'text-primary3'
+          )}
         >
-          {CONNECT_OPTION.label}
-        </Link>
-      </li>
-
-      <li
-        className={mergeClasses(
-          'hidden h-[43px] w-full border-t-[0.5px] border-t-grey-dark first:border-t-0 lg:block lg:flex-[1] lg:justify-end lg:border-none',
-          isActive(CONNECT_OPTION.value) && 'text-primary3'
-        )}
-      >
-        <Link
-          className=" flex h-full w-full items-center px-[16px]"
-          href={String(CONNECT_OPTION.value)}
-        >
-          <Button variant="primary" className="h-[41px] w-[131px]">
+          <Link
+            className="flex h-full w-full items-center justify-center"
+            href={String(CONNECT_OPTION.value)}
+          >
             {CONNECT_OPTION.label}
-          </Button>
-        </Link>
-      </li>
-    </ul>
+          </Link>
+        </li>
+      </ul>
+    </section>
   );
 };
