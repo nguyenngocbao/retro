@@ -11,21 +11,28 @@ export const Image: FC<ImageProps> = ({ src, alt, lgSrc, xlSrc, ...props }) => {
 
   if (isReponsive) {
     if (typeof process !== undefined) {
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcSet={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + xlSrc}
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcSet={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + lgSrc}
-        />
-        <ImageNext
-          src={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + src}
-          alt={alt}
-          {...props}
-        />
-      </picture>;
+      return (
+        <picture>
+          {xlSrc && (
+            <source
+              media="(min-width: 1280px)"
+              srcSet={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + xlSrc}
+            />
+          )}
+          {lgSrc && (
+            <source
+              media="(min-width: 1024px)"
+              srcSet={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + lgSrc}
+            />
+          )}
+
+          <ImageNext
+            src={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + src}
+            alt={alt}
+            {...props}
+          />
+        </picture>
+      );
     }
     return (
       <picture>
