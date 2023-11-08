@@ -34,9 +34,27 @@ module.exports = {
         'bg2-gradient': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
         }/bg2-gradient.png')`,
+        'bg2-gradient-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/bg2-gradient-pc.png')`,
         bg3: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg3.png')`,
+        'bg3-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/bg3-pc.png')`,
         bg4: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg4.png')`,
-        bg5: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg5.png')`
+        'bg4-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/bg4-pc.png')`,
+        bg5: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg5.png')`,
+        'bg5-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/bg5-pc.png')`,
+        'game4-bg': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/game4-bg.png')`,
+        'game4-bg-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/game4-bg-pc.png')`
       }
     }
   },

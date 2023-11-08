@@ -22,109 +22,126 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
   ...props
 }) => {
   return (
-    <section className={mergeClasses(``, className)} {...props}>
-      <div className="flex flex-col items-center justify-center gap-[19px] bg-bg-title-3 px-[19px] pb-[29px] pt-[56px]">
-        <div className="flex h-[62px] w-[234px] items-center justify-center bg-bg-title-4 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-secondary">
-          FEATURED GAMES
+    <section
+      className={mergeClasses(`relative h-[689px] lg:h-[913px]`, className)}
+      {...props}
+    >
+      <Image
+        unoptimized
+        alt="scroll"
+        className="absolute top-0 z-[1] h-[calc(100%_+_70px)] w-full object-fill object-top lg:object-cover xl:h-[1043px]"
+        src="/bg-feature-game.svg"
+        lgSrc="/bg-feature-game-pc.svg"
+        width={390}
+        height={750}
+      />
+      <div className="absolute left-[50%] top-[50%] z-[2] h-full w-full max-w-[calc(100%_-_38px)] translate-x-[-50%] translate-y-[-50%] lg:h-auto xl:max-w-[1276px]">
+        <div className="flex flex-col items-center justify-center gap-[19px] pb-[29px] pt-[56px] lg:pb-[32px]">
+          <div className="flex h-[62px] w-[234px] items-center justify-center bg-bg-title-4 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-secondary lg:h-[135px] lg:w-[512px] lg:text-[40px] lg:leading-[48px]">
+            FEATURED GAMES
+          </div>
+          <p className="text-center text-[16px] leading-[24px] text-black lg:max-w-[844px] lg:text-[20px] lg:uppercase lg:leading-[28px]">
+            Immerse yourself in the Cyberpunk universe, from the original
+            storyline of Cyberpunk 2077 and its gripping spy-thriller expansion
+            Phantom Liberty to the award-winning anime series Cyberpunk:
+            Edgerunners — there are countless stories to discover in the deadly
+            megalopolis of Night City.
+          </p>
         </div>
-        <p className="text-center text-[16px] leading-[24px] text-black">
-          Immerse yourself in the Cyberpunk universe, from the original
-          storyline of Cyberpunk 2077 and its gripping spy-thriller expansion
-          Phantom Liberty to the award-winning anime series Cyberpunk:
-          Edgerunners — there are countless stories to discover in the deadly
-          megalopolis of Night City.
-        </p>
+        <Slider
+          {...settings}
+          className="mx-[-19px] bg-[#333] p-[19px] lg:p-[12px] xl:mx-[unset]"
+        >
+          <div className="relative mr-[11px] h-[330px] !w-[243px] lg:mr-[14px] lg:h-[413px] lg:!w-[304px]">
+            <div className="flex h-full w-full flex-col items-center justify-end">
+              <Image
+                unoptimized
+                alt="scroll"
+                className="absolute z-[-1] h-full w-full"
+                src="/supper-mario-bros-2-bg.png"
+                width={304}
+                height={413}
+              />
+              <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
+              <p className="mb-[6px] text-[20px] leading-[28px] text-white">
+                SUPER MARIO BROS 2
+              </p>
+              <Button
+                variant="secondary"
+                className="mb-[15px] h-[38px] w-[157px]"
+              >
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="relative mr-[11px] h-[330px] !w-[243px] lg:mr-[14px] lg:h-[413px] lg:!w-[304px]">
+            <div className="flex h-full w-full flex-col items-center justify-end">
+              <Image
+                unoptimized
+                alt="scroll"
+                className="absolute z-[-1] h-full w-full"
+                src="/out-run-bg.png"
+                width={304}
+                height={413}
+              />
+              <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
+              <p className="mb-[6px] text-[20px] leading-[28px] text-white">
+                OUT RUN
+              </p>
+              <Button
+                variant="secondary"
+                className="mb-[15px] h-[38px] w-[157px]"
+              >
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="relative mr-[11px] h-[330px] !w-[243px] lg:mr-[14px] lg:h-[413px] lg:!w-[304px]">
+            <div className="flex h-full w-full flex-col items-center justify-end">
+              <Image
+                unoptimized
+                alt="scroll"
+                className="absolute z-[-1] h-full w-full"
+                src="/donkey-kong-bg.png"
+                width={304}
+                height={413}
+              />
+              <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
+              <p className="mb-[6px] text-[20px] leading-[28px] text-white">
+                DONKEY KONG
+              </p>
+              <Button
+                variant="secondary"
+                className="mb-[15px] h-[38px] w-[157px]"
+              >
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+          <div className="relative mr-[11px] h-[330px] !w-[243px] lg:mr-[14px] lg:h-[413px] lg:!w-[304px]">
+            <div className="flex h-full w-full flex-col items-center justify-end">
+              <Image
+                unoptimized
+                alt="scroll"
+                className="absolute z-[-1] h-full w-full"
+                src="/supper-mario-bros-v2-bg.png"
+                width={304}
+                height={413}
+              />
+              <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
+              <p className="mb-[6px] text-[20px] leading-[28px] text-white">
+                OUT RUN VER 2.0
+              </p>
+              <Button
+                variant="secondary"
+                className="mb-[15px] h-[38px] w-[157px]"
+              >
+                LEARN MORE
+              </Button>
+            </div>
+          </div>
+        </Slider>
       </div>
-      <Slider {...settings} className="bg-[#333] p-[19px]">
-        <div className="relative mr-[11px] h-[330px] !w-[243px] ">
-          <div className="flex h-full w-full flex-col items-center justify-end">
-            <Image
-              unoptimized
-              alt="scroll"
-              className="absolute z-[-1] h-full w-full"
-              src="/supper-mario-bros-2-bg.png"
-              width={304}
-              height={413}
-            />
-            <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
-            <p className="mb-[6px] text-[20px] leading-[28px] text-white">
-              SUPER MARIO BROS 2
-            </p>
-            <Button
-              variant="secondary"
-              className="mb-[15px] h-[38px] w-[157px]"
-            >
-              LEARN MORE
-            </Button>
-          </div>
-        </div>
-        <div className="relative mr-[11px] h-[330px] !w-[243px] ">
-          <div className="flex h-full w-full flex-col items-center justify-end">
-            <Image
-              unoptimized
-              alt="scroll"
-              className="absolute z-[-1] h-full w-full"
-              src="/out-run-bg.png"
-              width={304}
-              height={413}
-            />
-            <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
-            <p className="mb-[6px] text-[20px] leading-[28px] text-white">
-              OUT RUN
-            </p>
-            <Button
-              variant="secondary"
-              className="mb-[15px] h-[38px] w-[157px]"
-            >
-              LEARN MORE
-            </Button>
-          </div>
-        </div>
-        <div className="relative mr-[11px] h-[330px] !w-[243px] ">
-          <div className="flex h-full w-full flex-col items-center justify-end">
-            <Image
-              unoptimized
-              alt="scroll"
-              className="absolute z-[-1] h-full w-full"
-              src="/donkey-kong-bg.png"
-              width={304}
-              height={413}
-            />
-            <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
-            <p className="mb-[6px] text-[20px] leading-[28px] text-white">
-              DONKEY KONG
-            </p>
-            <Button
-              variant="secondary"
-              className="mb-[15px] h-[38px] w-[157px]"
-            >
-              LEARN MORE
-            </Button>
-          </div>
-        </div>
-        <div className="relative mr-[11px] h-[330px] !w-[243px] ">
-          <div className="flex h-full w-full flex-col items-center justify-end">
-            <Image
-              unoptimized
-              alt="scroll"
-              className="absolute z-[-1] h-full w-full"
-              src="/supper-mario-bros-v2-bg.png"
-              width={304}
-              height={413}
-            />
-            <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
-            <p className="mb-[6px] text-[20px] leading-[28px] text-white">
-              OUT RUN VER 2.0
-            </p>
-            <Button
-              variant="secondary"
-              className="mb-[15px] h-[38px] w-[157px]"
-            >
-              LEARN MORE
-            </Button>
-          </div>
-        </div>
-      </Slider>
     </section>
   );
 };

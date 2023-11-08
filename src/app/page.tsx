@@ -7,10 +7,10 @@ import { WelcomeBanner } from './components/features/WelcomeBannerSection';
 export default function () {
   return (
     <main>
-      <WelcomeBanner className="mb-[36px] lg:mb-[75px]" />
-      <ExploreSection className="lg:mb-[52px]" />
-      <GameOverview className="lg:mb-[52px]" />
-      <FeatureGamesSections className="lg:mb-[102px]" />
+      <WelcomeBanner className="mb-[36px] md:mb-0" />
+      <ExploreSection />
+      <GameOverview />
+      <FeatureGamesSections />
       <JoinTheWorldSection />
     </main>
   );

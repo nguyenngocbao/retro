@@ -14,13 +14,13 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="relative flex flex-col gap-[24px] p-[92px_19px_41px_19px] lg:flex-row lg:justify-between lg:p-[28px_135px]">
+      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:flex-row lg:justify-between lg:p-0 lg:pb-[59px] xl:max-w-[1276px]">
         <Image
           width={136}
           height={66}
           src="/retrocraft.svg"
           alt="retro-game"
-          className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%]"
+          className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%] lg:static lg:translate-x-0 lg:translate-y-0"
           unoptimized
         />
         <div className="flex flex-wrap gap-x-[33px] gap-y-[20px] lg:flex-row lg:gap-[86px]">
@@ -29,7 +29,7 @@ export const Footer = () => {
               <div key={i}>
                 <Link
                   href={String(item.value)}
-                  className="mb-[16px] block text-[16px] leading-[22px] lg:mb-[16px]"
+                  className="mb-[16px] block text-[16px] leading-[22px] lg:mb-[16px] lg:text-[20px] lg:leading-[28px]"
                 >
                   {item.label}
                 </Link>
