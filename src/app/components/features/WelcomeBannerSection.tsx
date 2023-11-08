@@ -4,7 +4,6 @@
 import { FC, HTMLAttributes, useEffect, useRef } from 'react';
 
 import { CrossbowIcon } from '@/app/assets/icons/Crossbow';
-import { FourLeafsIcon } from '@/app/assets/icons/FourLeafs';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
 import { RetrocraftIcon } from '@/app/assets/icons/Retrocraft';
 import { RightArrowIcon } from '@/app/assets/icons/RightArrow';

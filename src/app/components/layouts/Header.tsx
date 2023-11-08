@@ -13,13 +13,13 @@ import { Menu } from './Menu';
 export function Header() {
   const [isOpen, setOpen] = useState(false);
 
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.documentElement.style.position = 'fixed';
-  //   } else {
-  //     document.documentElement.style.position = '';
-  //   }
-  // }, [isOpen]);
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.position = 'fixed';
+    } else {
+      document.documentElement.style.position = '';
+    }
+  }, [isOpen]);
 
   return (
     <header className="fixed top-0 z-50  w-screen  bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]">
