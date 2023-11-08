@@ -27,3 +27,18 @@ main {
     scrollbar-width: none; /* Firefox */
   }
 }
+
+@media (min-width: 1024px) {
+  #welcome-banner .slick-slider {
+    height: 100% !important;
+  }
+  #welcome-banner .slick-list {
+    height: 100% !important;
+  }
+  #welcome-banner .slick-track {
+    height: 100% !important;
+  }
+  #welcome-banner .slick-slide div {
+    height: 100% !important;
+  }
+}

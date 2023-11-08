@@ -7,6 +7,7 @@ import { CrossbowIcon } from '@/app/assets/icons/Crossbow';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
 import { RetrocraftIcon } from '@/app/assets/icons/Retrocraft';
 import { RightArrowIcon } from '@/app/assets/icons/RightArrow';
+import { SwordIcon } from '@/app/assets/icons/Sword';
 import { mergeClasses } from '@/app/utils';
 
 import { Button } from '../buttons/Button';
@@ -22,7 +23,7 @@ const settings = {
   slidesToScroll: 1,
   arrows: false,
   autoplaySpeed: 3000,
-  autoplay: true,
+  // autoplay: true,
   adaptiveHeight: true
 };
 
@@ -66,7 +67,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `relative lg:flex lg:flex-col lg:justify-between xl:h-screen`,
+        `relative lg:flex lg:h-screen lg:flex-col lg:justify-between`,
         className
       )}
       {...props}
@@ -82,34 +83,37 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
         autoPlay
         muted
       />
-      <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[170px] lg:flex lg:gap-[72px] xl:mt-[237px] xl:max-w-[1276px]">
-        <div className="lg:w-[554px]">
+      <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:flex lg:h-[calc(100vh_-_141px)] lg:max-w-[calc(100%_-_72px)] lg:gap-[40px] xl:mt-[180px] xl:max-w-[1227px] xl:gap-[72px]">
+        <div className="lg:w-[450px] lg:flex-shrink-0 xl:w-[554px]">
           <h1 className="mb-[10px] text-[20px] font-bold leading-[28px] lg:mb-[30px] lg:text-[40px] lg:leading-[48px]">
             WELCOME TO
           </h1>
-          <RetrocraftIcon className="mb-[23px] h-[117px] w-[246px] lg:mb-[32px] lg:h-[205px] lg:w-[429px]" />
-          <p className="mb-[29px] text-[16px] font-bold leading-[22px] lg:mb-[24px] lg:text-[20px]  lg:leading-[28px]">
+          <RetrocraftIcon className="mb-[23px] h-[117px] w-[246px] xl:mb-[32px] xl:h-[205px] xl:w-[429px]" />
+          <p className="mb-[29px] text-[16px] font-bold leading-[22px] lg:uppercase xl:mb-[24px] xl:text-[20px]  xl:leading-[28px]">
             With new games, new updates, and new ways to play, join one of the
             biggest communities in gaming and start crafting today!
           </p>
           <PlayNowButton />
         </div>
-        <div className="md:mx-[50px] lg:mx-[unset] lg:flex-[1] lg:overflow-hidden">
+        <div
+          className="md:mx-[50px] lg:relative lg:mx-[unset] lg:max-w-[calc(100vw_-_562px)] lg:flex-[1] xl:max-w-[calc(calc(100vw_-_626px)_-_calc(100vw_-_1227px))]"
+          id="welcome-banner"
+        >
           <Slider ref={topSliderRef} {...settings}>
             <div className="relative flex h-[280px] w-[346px] flex-col md:h-[450px]">
               <Image
                 unoptimized
                 alt="story of mario 1"
-                className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] object-contain lg:h-full"
+                className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] object-scale-down md:h-full md:overflow-visible md:object-contain lg:h-full lg:object-top"
                 src="/character1.png"
                 width={346}
                 height={280}
               />
               <Button
                 variant="secondary"
-                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:h-[57px]"
+                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[50px] lg:left-0 lg:translate-x-0  xl:h-[74px] xl:px-[21px] xl:text-[30px] xl:leading-[36px]"
               >
-                <CrossbowIcon className="shrink-0" />
+                <CrossbowIcon className="h-[29px] w-[29px] shrink-0 xl:h-[58px] xl:w-[58px]" />
                 <span className="shrink-0">SUPER MARIO BROS 2</span>
               </Button>
             </div>
@@ -117,21 +121,21 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
               <Image
                 unoptimized
                 alt="story of mario 2"
-                className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] object-contain lg:h-full"
+                className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] object-scale-down md:h-full md:overflow-visible md:object-contain lg:h-full lg:object-top"
                 src="/character2.png"
                 width={346}
                 height={280}
               />
               <Button
                 variant="secondary"
-                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:h-[57px]"
+                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[50px] lg:left-0 lg:translate-x-0  xl:h-[74px] xl:px-[21px] xl:text-[30px] xl:leading-[36px]"
               >
-                <CrossbowIcon className="shrink-0" />
+                <SwordIcon className="h-[29px] w-[29px] shrink-0 xl:h-[58px] xl:w-[58px]" />
                 <span className="shrink-0">OUT RUN</span>
               </Button>
             </div>
           </Slider>
-          <div className="mx-[-19px] flex h-[79px] justify-center gap-[5px] lg:h-full">
+          <div className="mx-[-19px] flex h-[79px] justify-center gap-[5px] lg:absolute lg:bottom-[51px] lg:right-0 lg:mx-[unset] lg:h-auto xl:bottom-[65px]">
             <Button
               onClick={() => onClickNext(topSliderRef)}
               variant="secondary"
@@ -153,14 +157,14 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
         <Button
           variant="secondary"
           onClick={() => onClickNext(bottomSliderRef)}
-          className="absolute left-0 top-[50%] z-40 h-[41px] w-[41px] translate-y-[-50%]"
+          className="absolute left-0 top-[50%] z-40 h-[41px] w-[41px] translate-y-[-50%] xl:left-[calc(calc(100vw_-_1227px)_/_2)]"
         >
           <LeftArrowIcon />
         </Button>
         <Button
           variant="secondary"
           onClick={() => onClickPrev(bottomSliderRef)}
-          className="absolute right-0 top-[50%] z-40 h-[41px] w-[41px] translate-y-[-50%]"
+          className="absolute right-0 top-[50%] z-40 h-[41px] w-[41px] translate-y-[-50%] xl:right-[calc(calc(100vw_-_1227px)_/_2)]"
         >
           <RightArrowIcon />
         </Button>
@@ -172,7 +176,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <Image
             unoptimized
             alt="scroll"
-            className="mr-[13px] h-[141px] !w-[251px]"
+            className="mr-[13px] h-[141px] !w-[251px] object-cover xl:h-[231px] xl:!w-[412px]"
             src="/scroll-bg1.png"
             width={251}
             height={141}
@@ -180,7 +184,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <Image
             unoptimized
             alt="scroll"
-            className="mr-[13px] h-[141px] !w-[251px]"
+            className="mr-[13px] h-[141px] !w-[251px] object-cover xl:h-[231px] xl:!w-[412px]"
             src="/scroll-bg2.png"
             width={251}
             height={141}
@@ -188,7 +192,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <Image
             unoptimized
             alt="scroll"
-            className="mr-[13px] h-[141px] !w-[251px]"
+            className="mr-[13px] h-[141px] !w-[251px] object-cover xl:h-[231px] xl:!w-[412px]"
             src="/scroll-bg3.png"
             width={251}
             height={141}
@@ -196,7 +200,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <Image
             unoptimized
             alt="scroll"
-            className="mr-[13px] h-[141px] !w-[251px]"
+            className="mr-[13px] h-[141px] !w-[251px] object-cover xl:h-[231px] xl:!w-[412px]"
             src="/scroll-bg4.png"
             width={251}
             height={141}
@@ -204,7 +208,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <Image
             unoptimized
             alt="scroll"
-            className="mr-[13px] h-[141px] !w-[251px]"
+            className="mr-[13px] h-[141px] !w-[251px] object-cover xl:h-[231px] xl:!w-[412px]"
             src="/scroll-bg5.png"
             width={251}
             height={141}

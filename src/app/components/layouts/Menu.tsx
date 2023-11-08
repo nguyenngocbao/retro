@@ -33,7 +33,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
   return (
     <section
       className={mergeClasses(
-        'fixed top-0 z-40 flex h-screen w-[287px] flex-col items-end bg-black p-[60px_23px] text-[20px] font-bold leading-[28px] text-white transition-all lg:static lg:z-auto lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:bg-transparent lg:p-[unset] lg:pt-[unset]',
+        'fixed top-0 z-40 flex h-screen w-[287px] flex-col items-end bg-black p-[60px_23px] font-bold leading-[28px] text-white transition-all lg:static lg:z-auto lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:bg-transparent lg:p-[unset] lg:pt-[unset] xl:text-[20px]',
         isOpen ? 'right-0' : 'right-[-100%]'
       )}
     >
@@ -54,7 +54,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
         unoptimized
       />
       <div className="mb-[23px] mt-[29px] h-[1px] w-full bg-white lg:hidden"></div>
-      <ul className="h-full w-full text-right lg:flex lg:h-[66px] lg:w-auto lg:items-center lg:justify-end lg:gap-[27px] lg:border lg:border-secondary lg:pl-[48px]">
+      <ul className="h-full w-full text-right lg:flex lg:h-[50px] lg:w-auto lg:items-center lg:justify-end lg:gap-[27px] lg:border lg:border-secondary lg:pl-[48px] xl:h-[66px]">
         {PREVIOUS_OPTIONS.map((menu, i) => {
           const hasChildren = menu?.children?.length > 0;
           const Element: any = hasChildren ? 'button' : Link;

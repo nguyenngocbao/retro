@@ -14,13 +14,13 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:flex-row lg:justify-between lg:p-0 lg:pb-[59px] xl:max-w-[1276px]">
+      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:max-w-[calc(100%_-_72px)] lg:flex-row lg:justify-between lg:pb-[59px] lg:pt-0 xl:max-w-[1227px]">
         <Image
           width={136}
           height={66}
           src="/retrocraft.svg"
           alt="retro-game"
-          className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%] lg:static lg:translate-x-0 lg:translate-y-0"
+          className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%] lg:static lg:mt-[5px] lg:h-fit lg:w-[100px]  lg:translate-x-0 lg:translate-y-0 xl:h-[68px] xl:w-[136px]"
           unoptimized
         />
         <div className="flex flex-wrap gap-x-[33px] gap-y-[20px] lg:flex-row lg:gap-[86px]">
@@ -80,7 +80,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="flex h-[54px] items-center justify-center gap-[4px] bg-secondary text-center text-[16px] font-[600] leading-[22px] text-black lg:h-[55px] lg:text-[16px]">
+      <p className="flex h-[54px] items-center justify-center gap-[4px] bg-secondary text-center text-[16px] font-[600] leading-[22px] text-black xl:h-[55px] xl:text-[16px]">
         <CCircleIcon />
         <span>2023 by RETROCRAFT. All Rights Reserved.</span>
       </p>

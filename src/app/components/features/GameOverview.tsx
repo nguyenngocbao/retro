@@ -14,7 +14,7 @@ export const GameOverview: FC<HTMLAttributes<HTMLElement>> = ({
     <section
       id="game-overview"
       className={mergeClasses(
-        'relative mx-auto max-w-[calc(100%_-_38px)] pb-[32px] lg:mx-auto lg:flex lg:flex-col lg:gap-[65px] lg:p-0 lg:pb-[80px] lg:pt-[80px] xl:max-w-[1276px] xl:flex-row xl:pb-[211px] xl:pt-[unset]',
+        'relative mx-auto max-w-[calc(100%_-_38px)] pb-[32px] md:max-w-[calc(100%_-_110px)] lg:mx-auto lg:flex lg:max-w-[calc(100%_-_300px)] lg:flex-row lg:gap-[30px]  lg:pb-[100px] lg:pt-[30px] xl:max-w-[1227px] xl:gap-[65px] xl:p-0 xl:pb-[211px] xl:pt-[unset]',
         className
       )}
       {...props}
@@ -22,20 +22,20 @@ export const GameOverview: FC<HTMLAttributes<HTMLElement>> = ({
       <Image
         unoptimized
         alt="story of mario"
-        className="absolute right-0 top-[-102px] md:w-[55vw] lg:left-0 lg:top-[-140px] lg:h-[698px] lg:w-[589px] xl:left-0 xl:top-[-163px]"
+        className="absolute right-0 top-[-102px] md:left-0 md:top-[-50px] md:w-[50vw] lg:top-[-20px] lg:w-[340px] xl:top-[-150px] xl:w-[589px]"
         src="/bg4-pc.png"
         width={343}
         height={407}
       />
-      <div className="h-[292px] shrink-0 lg:w-[589px]"></div>
+      <div className="h-[292px] shrink-0 md:h-[280px] lg:w-[340px] lg:shrink-0 xl:w-[589px]"></div>
       <div>
-        <h2 className="mb-[8px] text-[20px] font-bold leading-[28px] lg:mb-[30px] lg:text-right lg:text-[36px] lg:leading-[50px] xl:text-left">
+        <h2 className="mb-[8px] text-[20px] font-bold leading-[28px] md:text-right lg:text-left xl:mb-[30px] xl:text-left xl:text-[36px] xl:leading-[50px]">
           GAME OVERVIEW
         </h2>
-        <div className="mb-[11px] flex h-[69px] w-[263px] items-center justify-center bg-bg-title-2 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black lg:mb-[31px] lg:ml-auto lg:h-[135px] lg:w-[512px] lg:text-[40px] lg:leading-[48px] xl:ml-[unset]">
+        <div className="mb-[11px] flex h-[69px] w-[263px] items-center justify-center bg-bg-title-2 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black md:mb-[30px] md:ml-auto lg:ml-[unset] xl:mb-[31px] xl:ml-[unset] xl:h-[135px] xl:w-[512px] xl:text-[40px] xl:leading-[48px]">
           THE NEW BEGINNING
         </div>
-        <p className="text-[16px] leading-[22px] text-white lg:text-[23px] lg:uppercase lg:leading-[30px] xl:text-[20px] xl:leading-[28px]">
+        <p className="text-[16px] leading-[22px] text-white md:mx-[-35px] lg:mx-[unset]  xl:text-[23px] xl:uppercase xl:leading-[30px]">
           Kratos is a father again. As mentor and protector to Atreus, a son
           determined to earn his respect, he is forced to deal with and control
           the rage that has long defined him while out in a very dangerous world

@@ -16,16 +16,16 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
     <>
       <section
         className={mergeClasses(
-          'bg-bg2-gradient bg-cover bg-bottom bg-no-repeat pb-[82px] pt-[23px] lg:bg-bg2-gradient-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
+          'bg-bg2-gradient bg-cover bg-bottom bg-no-repeat pb-[82px] pt-[23px] md:py-[50px] lg:bg-bg2-gradient-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] xl:max-w-[1276px]">
-          <h2 className="mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black lg:mb-[29px] lg:h-[135px] lg:w-[512px] lg:text-[40px] lg:leading-[48px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
+          <h2 className="mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black xl:mb-[29px] xl:h-[135px] xl:w-[512px] xl:text-[40px] xl:leading-[48px]">
             EXPLORE THE GAME
           </h2>
-          <p className="mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:mb-[118px] lg:max-w-[723px] lg:text-[20px] lg:uppercase lg:leading-[28px]">
+          <p className="mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] xl:mb-[118px] xl:text-[20px] xl:uppercase xl:leading-[28px]">
             With new games, new updates, and new ways to play, join one of the
             biggest communities in gaming and start crafting today!
           </p>
@@ -40,12 +40,12 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center gap-[27px] bg-bg3 bg-cover bg-bottom bg-no-repeat py-[90px] lg:bg-bg3-pc lg:px-0',
+          'flex flex-col items-center justify-center  gap-[27px] bg-bg3 bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-bg3-pc lg:px-0 xl:py-[139px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] xl:max-w-[1276px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
             imagePath="/game-cd2.png"
@@ -58,12 +58,12 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center gap-[27px] bg-bg3 bg-cover bg-bottom bg-no-repeat py-[90px] lg:bg-bg3-pc lg:px-0',
+          'flex  flex-col items-center justify-center  gap-[27px] bg-bg3 bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-bg3-pc lg:px-0 xl:py-[139px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] xl:max-w-[1276px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
           <GameExpore
             imagePath="/game-cd3.png"
             imageAlt="game3"
@@ -75,12 +75,12 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] lg:bg-game4-bg-pc lg:px-0 xl:h-[961px]',
+          'flex  flex-col items-center justify-center  gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game4-bg-pc lg:px-0 xl:h-[800px] xl:pb-[139px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] xl:max-w-[1276px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
             imagePath="/game-cd1.png"
