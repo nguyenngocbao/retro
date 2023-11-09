@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -68,5 +70,16 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.flip-y-360': {
+          transform: 'rotateY(360deg)'
+        },
+        '.text-shadow': {
+          'text-shadow': '1px 1px black'
+        }
+      });
+    })
+  ]
 };

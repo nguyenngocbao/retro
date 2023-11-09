@@ -30,7 +30,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <button
       className={mergeClasses(
-        'flex items-center justify-center text-[20px] font-bold leading-[28px]',
+        'flex items-center justify-center text-[20px] font-bold leading-[28px] transition-all hover:scale-x-105 hover:scale-y-110',
         variantClass,
         className
       )}
