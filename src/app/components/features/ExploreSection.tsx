@@ -26,8 +26,9 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             EXPLORE THE GAME
           </h2>
           <p className="mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[118px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
-            With new games, new updates, and new ways to play, join one of the
-            biggest communities in gaming and start crafting today!
+            Explore the ultimate nostalgic gaming metaverse! Quest through
+            reimagined retro classics, craft vivid voxel worlds, trade rare NFTs
+            and earn $Retro tokens as you play!
           </p>
           <GameExpore
             imagePath={GAME_EXPORES.SUPPER_MARIO_BROS_2.image}

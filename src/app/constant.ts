@@ -20,7 +20,8 @@ export const HEADER_MENU_OPTIONS: Option[] = [
   },
   {
     label: 'BUY $RETRO',
-    value: 'https://momo.vn/',
+    value:
+      'https://whitepaper.retrocraft.io/retrocaft-tokenomics/token-information',
     blank: true
   }
 ];
@@ -33,10 +34,6 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
       {
         label: 'Games',
         value: '/#game-expore'
-      },
-      {
-        label: 'Community',
-        value: 'https://github.com/nguyenngocbao/retro'
       },
       {
         label: 'Whitepaper',
@@ -64,12 +61,12 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
     children: [
       {
         label: 'X',
-        value: 'https://twitter.com/?lang=vi',
+        value: 'https://twitter.com/RetroCraftio',
         image: '/x.svg'
       },
       {
         label: 'Telegram',
-        value: 'https://web.telegram.org/',
+        value: 'https://t.me/retrocraftio',
         image: '/telegram.svg'
       }
     ]
@@ -83,15 +80,15 @@ export const WELCOME_BANNER = {
       icon: CrossbowIcon,
       image: '/character1.png',
       description:
-        'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
+        'Revisit the dreamy land of Subcon as Mario or Luigi - use unique abilities, battle enemies and explore in this faithfully recreated 8-bit classic.',
       backgroundImage: ['/welcome-banner-bg.png', '/welcome-banner-bg-pc.png']
     },
     {
-      name: 'OUT RUN',
+      name: 'TANK WAR',
       icon: SwordIcon,
       image: '/character2.png',
       description:
-        'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
+        'Battle with pixelated tanks in destructible terrain - take aim, fire missiles, and blow up opponents in this reimagined retro arcade tank shooter.',
       backgroundImage: ['/welcome-banner-bg2.png', '/welcome-banner-bg2-pc.png']
     }
   ],
@@ -125,99 +122,97 @@ export const GAME_EXPORES = {
     icon: CrossbowIcon,
     image: '/game-cd1.png',
     description:
-      'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
+      'Battle with pixelated tanks in destructible terrain - take aim, fire missiles, and blow up opponents in this reimagined retro arcade tank shooter.',
     levelToPlay: 100,
     bossToBeat: 20,
-    buttonLink: '/',
+    buttonLink:
+      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
     buttonName: 'PLAY NOW'
   },
   OUT_RUN: {
-    name: 'OUT RUN',
+    name: 'TANK WAR',
     icon: SwordIcon,
     image: '/game-cd2.png',
     description:
-      'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
+      'Battle with pixelated tanks in destructible terrain - take aim, fire missiles, and blow up opponents in this reimagined retro arcade tank shooter.',
     levelToPlay: 100,
     bossToBeat: 20,
-    buttonLink: '/',
+    buttonLink:
+      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
     buttonName: 'PLAY NOW'
   },
   DONKEY_KONG: {
-    name: 'DONKEY KONG',
+    name: 'CAR RACING',
     icon: CrossbowIcon,
     image: '/game-cd3.png',
     description:
-      'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
+      'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
     levelToPlay: 100,
     bossToBeat: 20,
-    buttonLink: '/',
+    buttonLink:
+      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
     buttonName: 'PLAY NOW'
   },
   OUT_RUN_VER_2: {
-    name: 'OUT RUN VER 2.0',
+    name: 'CAR RACING VER 2.0',
     icon: SwordIcon,
     image: '/game-cd1.png',
     description:
-      'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
+      'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
     levelToPlay: 100,
     bossToBeat: 20,
-    buttonLink: '/',
+    buttonLink:
+      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
     buttonName: 'PLAY NOW'
   }
 };
 
 export const GAME_OVERVIEW = {
   title: 'THE NEW BEGINNING',
-  description: `Kratos is a father again. As mentor and protector to Atreus, a son
-  determined to earn his respect, he is forced to deal with and control
-  the rage that has long defined him while out in a very dangerous world
-  with his son. His vengeance against the Gods of Olympus behind him,
-  Kratos now lives in the realm of Norse deities and monsters.`
+  description: `RetroCraft is a unique nostalgic blockchain game developed by veteran indie studios,
+   recreating iconic retro titles like Super Mario, Car Racing and Tank War in pixel-perfect detail.
+  Players can quest through faithfully remastered classics, craft voxel worlds, compete in battles and minigames to earn $Retro tokens. The game also features survival mode, rare NFT trading marketplace, and overall aims to deliver the ultimate retro gaming experience coupled with real play-to-earn rewards.`
 };
 
 export const FEATURE_GAMES = {
   title: 'FEATURED GAMES',
-  description: `Immerse yourself in the Cyberpunk universe, from the original
-  storyline of Cyberpunk 2077 and its gripping spy-thriller expansion
-  Phantom Liberty to the award-winning anime series Cyberpunk:
-  Edgerunners — there are countless stories to discover in the deadly
-  megalopolis of Night City.`,
+  description: `Reimagined pixel-perfect classics. Faithfully remastered arcade favorites with smooth modern controls. Supercharged blockchain versions of iconic retro hits - now with new challenges to master and rewards to earn.`,
   games: [
     {
       image: '/supper-mario-bros-2-bg.png',
       name: 'SUPER MARIO BROS 2',
       shortDesc: 'desc',
       learnMore:
-        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/overview'
+        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
       image: '/out-run-bg.png',
-      name: 'OUT RUN',
+      name: 'CAR RACING',
       shortDesc: 'desc',
       learnMore:
-        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/overview'
+        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
       image: '/donkey-kong-bg.png',
-      name: 'DONKEY KONG',
+      name: 'TANK WAR',
       shortDesc: 'desc',
       learnMore:
-        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/overview'
+        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
       image: '/supper-mario-bros-v2-bg.png',
-      name: 'OUT RUN VER 2.0',
+      name: 'CAR RACING VER 2.0',
       shortDesc: 'desc',
       learnMore:
-        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/overview'
+        'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     }
   ]
 };
 
 export const JOIN_THE_WORLD = {
   title: 'JOIN THE WOLRD OF RETROCRAFT',
-  description: `With new games, new updates, and new ways to play, join one of the
-  biggest communities in gaming and start crafting today!`,
+  description: `Step into the ultimate retro gaming. 
+  Play through reimagined classics, battle to win, craft unique worlds, trade NFTs and earn as you game.`,
   joinNowLink:
-    'https://whitepaper.retrocraft.io/what-is-retrocraft-games/overview'
+    'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft'
 };

@@ -77,10 +77,10 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           </h1>
           <RetrocraftIcon className="mb-[23px] h-[117px] w-[246px] 2xl:mb-[32px] 2xl:h-[205px] 2xl:w-[429px]" />
           <p className="mb-[29px] text-[16px] font-bold leading-[22px] lg:uppercase 2xl:mb-[24px] 2xl:text-[20px] 2xl:leading-[28px]">
-            With new games, new updates, and new ways to play, join one of the
-            biggest communities in gaming and start crafting today!
+            the ultimate retro gaming experience. Relive classics and earn for
+            real in RetroCraft.
           </p>
-          <Link href="/">
+          <Link href="https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft">
             <Button
               variant="secondary"
               className="relative mb-[30px] ml-[32px] h-[36px] w-[140px] md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
