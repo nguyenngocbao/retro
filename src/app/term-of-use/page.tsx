@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function () {
   return (
     <main className="mx-auto mb-[95px] mt-[95px] max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:max-w-[calc(100%_-_300px)] 2xl:mt-[180px] 2xl:max-w-[1227px]">
