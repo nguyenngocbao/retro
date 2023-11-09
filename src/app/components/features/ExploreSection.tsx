@@ -35,7 +35,8 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             titleIcon={GAME_EXPORES.SUPPER_MARIO_BROS_2.icon}
             name={GAME_EXPORES.SUPPER_MARIO_BROS_2.name}
             desc={GAME_EXPORES.SUPPER_MARIO_BROS_2.description}
-            href={GAME_EXPORES.SUPPER_MARIO_BROS_2.playNowLink}
+            buttonName={GAME_EXPORES.SUPPER_MARIO_BROS_2.buttonName}
+            buttonLink={GAME_EXPORES.SUPPER_MARIO_BROS_2.buttonLink}
             levelToPlay={GAME_EXPORES.SUPPER_MARIO_BROS_2.levelToPlay}
             bossToBeat={GAME_EXPORES.SUPPER_MARIO_BROS_2.bossToBeat}
           />
@@ -56,7 +57,8 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             titleIcon={GAME_EXPORES.OUT_RUN.icon}
             name={GAME_EXPORES.OUT_RUN.name}
             desc={GAME_EXPORES.OUT_RUN.description}
-            href={GAME_EXPORES.OUT_RUN.playNowLink}
+            buttonName={GAME_EXPORES.OUT_RUN.buttonName}
+            buttonLink={GAME_EXPORES.OUT_RUN.buttonLink}
             levelToPlay={GAME_EXPORES.OUT_RUN.levelToPlay}
             bossToBeat={GAME_EXPORES.OUT_RUN.bossToBeat}
           />
@@ -76,7 +78,8 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             titleIcon={GAME_EXPORES.DONKEY_KONG.icon}
             name={GAME_EXPORES.DONKEY_KONG.name}
             desc={GAME_EXPORES.DONKEY_KONG.description}
-            href={GAME_EXPORES.DONKEY_KONG.playNowLink}
+            buttonName={GAME_EXPORES.DONKEY_KONG.buttonName}
+            buttonLink={GAME_EXPORES.DONKEY_KONG.buttonLink}
             levelToPlay={GAME_EXPORES.DONKEY_KONG.levelToPlay}
             bossToBeat={GAME_EXPORES.DONKEY_KONG.bossToBeat}
           />
@@ -97,7 +100,8 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             titleIcon={GAME_EXPORES.OUT_RUN_VER_2.icon}
             name={GAME_EXPORES.OUT_RUN_VER_2.name}
             desc={GAME_EXPORES.OUT_RUN_VER_2.description}
-            href={GAME_EXPORES.OUT_RUN_VER_2.playNowLink}
+            buttonName={GAME_EXPORES.OUT_RUN_VER_2.buttonName}
+            buttonLink={GAME_EXPORES.OUT_RUN_VER_2.buttonLink}
             levelToPlay={GAME_EXPORES.OUT_RUN_VER_2.levelToPlay}
             bossToBeat={GAME_EXPORES.OUT_RUN_VER_2.bossToBeat}
           />

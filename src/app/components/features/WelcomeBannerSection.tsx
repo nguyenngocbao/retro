@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { FC, HTMLAttributes, useRef, useState } from 'react';
 
+import { FourLeafsIcon } from '@/app/assets/icons/FourLeafs';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
 import { RetrocraftIcon } from '@/app/assets/icons/Retrocraft';
 import { RightArrowIcon } from '@/app/assets/icons/RightArrow';
@@ -10,7 +11,6 @@ import { WELCOME_BANNER } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
 import { Button } from '../buttons/Button';
-import { PlayNowButton } from '../buttons/PlayNowButton';
 import { Image } from '../images/Image';
 import { Slider } from '../Slider';
 
@@ -66,9 +66,9 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
         width={10}
         height={10}
         src={WELCOME_BANNER.games[slideIndex].backgroundImage[0]}
-        lgSrc={WELCOME_BANNER.games[slideIndex].backgroundImage[1]}
+        mdSrc={WELCOME_BANNER.games[slideIndex].backgroundImage[1]}
         alt=""
-        className="absolute left-0 top-[-94px] z-[-1] h-full w-full object-cover transition-all lg:h-screen"
+        className="absolute left-0 top-[-94px] z-[-1] h-full w-full object-cover transition-all lg:top-0 lg:h-screen"
       />
       <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:flex lg:h-[calc(100vh_-_292px)] lg:max-w-[calc(100%_-_72px)] lg:gap-[40px] xl:max-w-[calc(100%_-_300px)] 2xl:mt-[180px] 2xl:h-[calc(100vh_-_413px)] 2xl:h-auto 2xl:max-w-[1227px] 2xl:gap-[72px]">
         <div className="lg:w-[450px] lg:flex-shrink-0 2xl:w-[554px]">
@@ -81,7 +81,13 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
             biggest communities in gaming and start crafting today!
           </p>
           <Link href="/">
-            <PlayNowButton />
+            <Button
+              variant="secondary"
+              className="relative mb-[30px] ml-[32px] h-[36px] w-[140px] md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
+            >
+              <FourLeafsIcon className="absolute left-0 translate-x-[-69%] 2xl:h-[76px] 2xl:w-[76px]" />
+              PLAY NOW
+            </Button>
           </Link>
         </div>
         <div

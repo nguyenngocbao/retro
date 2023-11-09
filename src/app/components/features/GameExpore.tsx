@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { FC, HTMLAttributes } from 'react';
 
+import { FourLeafsIcon } from '@/app/assets/icons/FourLeafs';
 import { mergeClasses } from '@/app/utils';
 
 import { Button } from '../buttons/Button';
-import { PlayNowButton } from '../buttons/PlayNowButton';
 import { Image } from '../images/Image';
 
 interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
@@ -13,9 +13,10 @@ interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
   titleIcon: any;
   name: string;
   desc: string;
-  href: string;
   levelToPlay: number;
   bossToBeat: number;
+  buttonName: string;
+  buttonLink?: string;
 }
 
 export const GameExpore: FC<GameExporeProps> = ({
@@ -27,7 +28,8 @@ export const GameExpore: FC<GameExporeProps> = ({
   desc,
   levelToPlay,
   bossToBeat,
-  href = '',
+  buttonName,
+  buttonLink,
   ...props
 }) => {
   return (
@@ -77,8 +79,14 @@ export const GameExpore: FC<GameExporeProps> = ({
             </p>
           </div>
         </div>
-        <Link href={href}>
-          <PlayNowButton />
+        <Link href={buttonLink}>
+          <Button
+            variant="secondary"
+            className="relative mb-[30px] ml-[32px] h-[36px] w-[140px] md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
+          >
+            <FourLeafsIcon className="absolute left-0 translate-x-[-69%] 2xl:h-[76px] 2xl:w-[76px]" />
+            {buttonName}
+          </Button>
         </Link>
       </div>
     </div>

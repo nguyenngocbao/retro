@@ -128,7 +128,8 @@ export const GAME_EXPORES = {
       'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
     levelToPlay: 100,
     bossToBeat: 20,
-    playNowLink: '/'
+    buttonLink: '/',
+    buttonName: 'PLAY NOW'
   },
   OUT_RUN: {
     name: 'OUT RUN',
@@ -138,7 +139,8 @@ export const GAME_EXPORES = {
       'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
     levelToPlay: 100,
     bossToBeat: 20,
-    playNowLink: '/'
+    buttonLink: '/',
+    buttonName: 'PLAY NOW'
   },
   DONKEY_KONG: {
     name: 'DONKEY KONG',
@@ -148,7 +150,8 @@ export const GAME_EXPORES = {
       'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
     levelToPlay: 100,
     bossToBeat: 20,
-    playNowLink: '/'
+    buttonLink: '/',
+    buttonName: 'PLAY NOW'
   },
   OUT_RUN_VER_2: {
     name: 'OUT RUN VER 2.0',
@@ -158,7 +161,8 @@ export const GAME_EXPORES = {
       'Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users',
     levelToPlay: 100,
     bossToBeat: 20,
-    playNowLink: '/'
+    buttonLink: '/',
+    buttonName: 'PLAY NOW'
   }
 };
 
