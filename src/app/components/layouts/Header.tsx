@@ -35,11 +35,11 @@ export function Header() {
         ></div>
       )}
       <header className="fixed top-0 z-[60] w-screen bg-[linear-gradient(360deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]">
-        <div className="mx-auto h-[82px] max-w-[calc(100%_-_38px)] lg:flex lg:h-[90px] lg:max-w-[calc(100%_-_72px)] lg:items-center lg:justify-between xl:h-[131px] xl:max-w-[1227px]">
+        <div className="mx-auto h-[82px] max-w-[calc(100%_-_38px)] lg:flex lg:h-[90px] lg:max-w-[calc(100%_-_72px)] lg:items-center lg:justify-between 2xl:h-[131px] 2xl:max-w-[1227px]">
           <div className="z-50 flex items-center justify-center p-[19px] lg:h-full lg:p-[unset]">
             <Image
               width={136}
-              className="h-[48px] w-[98px] lg:h-auto lg:w-[100px] xl:h-[66px] xl:w-[136px]"
+              className="h-[48px] w-[98px] lg:h-auto lg:w-[100px] 2xl:h-[66px] 2xl:w-[136px]"
               height={66}
               src="/retrocraft.svg"
               alt="retro-game"

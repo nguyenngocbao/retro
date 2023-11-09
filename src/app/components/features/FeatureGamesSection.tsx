@@ -23,24 +23,24 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
 }) => {
   return (
     <section
-      className={mergeClasses(`relative h-[689px] xl:h-[913px]`, className)}
+      className={mergeClasses(`relative h-[689px] 2xl:h-[913px]`, className)}
       {...props}
     >
       <Image
         unoptimized
         alt="scroll"
-        className="absolute top-0 z-[1] h-[calc(100%_+_70px)] w-full object-fill object-top md:h-[calc(100%_+_30px)] xl:h-[1043px]"
+        className="absolute top-0 z-[1] h-[calc(100%_+_70px)] w-full object-fill object-top md:h-[calc(100%_+_30px)] xl:h-[calc(100%_+_60px)] 2xl:h-[1043px]"
         src="/bg-feature-game.svg"
-        xlSrc="/bg-feature-game-pc.svg"
+        lgSrc="/bg-feature-game-pc.svg"
         width={390}
         height={750}
       />
-      <div className="absolute left-[50%] top-[50%] z-[2] h-full w-full max-w-[calc(100%_-_38px)] translate-x-[-50%] translate-y-[-50%] lg:max-w-[calc(100%_-_300px)] xl:h-auto xl:max-w-[1227px]">
-        <div className="flex flex-col items-center justify-center gap-[19px] pb-[29px] pt-[56px] xl:pb-[32px]">
-          <div className="flex h-[62px] w-[234px] items-center justify-center bg-bg-title-4 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-secondary lg:h-[69px] lg:w-[263px] xl:h-[135px] xl:w-[512px] xl:text-[40px] xl:leading-[48px]">
+      <div className="absolute left-[50%] top-[50%] z-[2] h-full w-full max-w-[calc(100%_-_38px)] translate-x-[-50%] translate-y-[-50%] lg:max-w-[calc(100%_-_300px)] 2xl:h-auto 2xl:max-w-[1227px]">
+        <div className="flex flex-col items-center justify-center gap-[19px] pb-[29px] pt-[56px] xl:pt-[80px] 2xl:pb-[32px]">
+          <div className="flex h-[62px] w-[234px] items-center justify-center bg-bg-title-4 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-secondary lg:h-[69px] lg:w-[263px] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
             FEATURED GAMES
           </div>
-          <p className="text-center text-[16px] leading-[24px] text-black xl:max-w-[844px] xl:text-[20px] xl:uppercase xl:leading-[28px]">
+          <p className="text-center text-[16px] leading-[24px] text-black 2xl:max-w-[844px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
             Immerse yourself in the Cyberpunk universe, from the original
             storyline of Cyberpunk 2077 and its gripping spy-thriller expansion
             Phantom Liberty to the award-winning anime series Cyberpunk:
@@ -50,9 +50,9 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
         </div>
         <Slider
           {...settings}
-          className="mx-[-19px] bg-[#333] p-[19px] xl:mx-[unset] xl:p-[12px]"
+          className="mx-[-19px] bg-[#333] p-[19px] 2xl:mx-[unset] 2xl:p-[12px]"
         >
-          <div className="relative mr-[11px] h-[330px] !w-[243px] xl:mr-[14px] xl:h-[413px] xl:!w-[291px]">
+          <div className="relative mr-[11px] h-[330px] !w-[243px] 2xl:mr-[14px] 2xl:h-[413px] 2xl:!w-[291px]">
             <div className="flex h-full w-full flex-col items-center justify-end">
               <Image
                 unoptimized
@@ -74,7 +74,7 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
               </Button>
             </div>
           </div>
-          <div className="relative mr-[11px] h-[330px] !w-[243px] xl:mr-[14px] xl:h-[413px] xl:!w-[291px]">
+          <div className="relative mr-[11px] h-[330px] !w-[243px] 2xl:mr-[14px] 2xl:h-[413px] 2xl:!w-[291px]">
             <div className="flex h-full w-full flex-col items-center justify-end">
               <Image
                 unoptimized
@@ -96,7 +96,7 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
               </Button>
             </div>
           </div>
-          <div className="relative mr-[11px] h-[330px] !w-[243px] xl:mr-[14px] xl:h-[413px] xl:!w-[291px]">
+          <div className="relative mr-[11px] h-[330px] !w-[243px] 2xl:mr-[14px] 2xl:h-[413px] 2xl:!w-[291px]">
             <div className="flex h-full w-full flex-col items-center justify-end">
               <Image
                 unoptimized
@@ -118,7 +118,7 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
               </Button>
             </div>
           </div>
-          <div className="relative mr-[11px] h-[330px] !w-[243px] xl:mr-[14px] xl:h-[413px] xl:!w-[291px]">
+          <div className="relative mr-[11px] h-[330px] !w-[243px] 2xl:mr-[14px] 2xl:h-[413px] 2xl:!w-[291px]">
             <div className="flex h-full w-full flex-col items-center justify-end">
               <Image
                 unoptimized

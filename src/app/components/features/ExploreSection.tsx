@@ -21,11 +21,11 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
-          <h2 className="mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black xl:mb-[29px] xl:h-[135px] xl:w-[512px] xl:text-[40px] xl:leading-[48px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
+          <h2 className="mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black 2xl:mb-[29px] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
             EXPLORE THE GAME
           </h2>
-          <p className="mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] xl:mb-[118px] xl:text-[20px] xl:uppercase xl:leading-[28px]">
+          <p className="mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[118px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
             With new games, new updates, and new ways to play, join one of the
             biggest communities in gaming and start crafting today!
           </p>
@@ -40,12 +40,12 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center  gap-[27px] bg-game2-bg  bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 xl:py-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game2-bg  bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 2xl:py-[139px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
             imagePath="/game-cd2.png"
@@ -58,12 +58,12 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 xl:py-[139px]',
+          'flex  flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:py-[139px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
             imagePath="/game-cd3.png"
             imageAlt="game3"
@@ -75,12 +75,12 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center  gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game4-bg-pc lg:px-0 xl:h-[800px] xl:pb-[139px]',
+          'flex  flex-col items-center justify-center  gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game4-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
           className
         )}
         {...props}
       >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] xl:max-w-[1227px]">
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
             imagePath="/game-cd1.png"
