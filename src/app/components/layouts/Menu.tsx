@@ -69,7 +69,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
               )}
             >
               <Element
-                className="flex h-[52px] w-full items-center justify-end gap-[6px] px-[16px] lg:h-full "
+                className="group flex h-[52px] w-full items-center justify-end gap-[6px] px-[16px] lg:h-full"
                 href={currentHref}
                 onClick={e => {
                   if (currentHref.includes('/#')) {
@@ -87,7 +87,9 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
                   });
                 }}
               >
-                <span>{menu.label}</span>
+                <span className="after:block after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 group-hover:text-secondary group-hover:after:w-full">
+                  {menu.label}
+                </span>
                 {hasChildren && <MenuArrowDownIcon />}
               </Element>
               <ul
@@ -123,7 +125,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
 
         <li
           className={mergeClasses(
-            'mt-[12px] h-[52px] bg-secondary text-black lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
+            'group mt-[12px] h-[52px] bg-secondary text-black transition-all hover:scale-x-105 hover:scale-y-110 lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
             isActive(CONNECT_OPTION.value) && 'text-primary3'
           )}
         >
@@ -131,7 +133,11 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
             className="flex h-full w-full items-center justify-center"
             href={String(CONNECT_OPTION.value)}
           >
-            {CONNECT_OPTION.label}
+            <span>BUY</span>
+            <span className="ml-[4px] mr-[2px] transition-all group-hover:text-[#1dc241] group-hover:flip-y-360 group-hover:text-shadow">
+              $
+            </span>
+            <span>RETRO</span>
           </Link>
         </li>
       </ul>

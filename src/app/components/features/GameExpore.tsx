@@ -49,15 +49,12 @@ export const GameExpore: FC<GameExporeProps> = ({
         height={517}
       />
       <div>
-        <Button
-          variant="secondary"
-          className="mb-[16px] h-[41px] w-max gap-[10px] px-[10px] 2xl:mb-[26px] 2xl:h-[74px] 2xl:gap-[27px] 2xl:pl-[19px] 2xl:pr-[28px]"
-        >
+        <div className="mb-[16px] flex h-[41px] w-max items-center justify-center gap-[10px] bg-secondary px-[10px] text-[20px] font-bold leading-[28px] text-black 2xl:mb-[26px] 2xl:h-[74px] 2xl:gap-[27px] 2xl:pl-[19px] 2xl:pr-[28px]">
           <Icon className="h-[19px] w-[19px] 2xl:h-[58px] 2xl:w-[58px]" />
           <span className="uppercase 2xl:text-[36px] 2xl:leading-[50px]">
             {name}
           </span>
-        </Button>
+        </div>
         <p className="mb-[12px] text-[16px] leading-[22px] text-white 2xl:mb-[17px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
           {desc}
         </p>

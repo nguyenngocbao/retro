@@ -115,13 +115,10 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
                     width={346}
                     height={280}
                   />
-                  <Button
-                    variant="secondary"
-                    className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[51px] lg:left-[unset] lg:right-[122px] lg:translate-x-0 lg:gap-[21px]  2xl:h-[74px] 2xl:px-[21px] 2xl:text-[30px] 2xl:leading-[36px]"
-                  >
+                  <span className="absolute bottom-[5px] left-[50%] flex h-[41px] w-max translate-x-[-50%] items-center justify-center gap-[10px] bg-secondary px-[10px] text-[20px] font-bold leading-[28px] text-black lg:bottom-[51px] lg:left-[unset] lg:right-[122px] lg:translate-x-0 lg:gap-[21px] 2xl:h-[74px] 2xl:px-[21px] 2xl:text-[30px] 2xl:leading-[36px]">
                     <Icon className="h-[29px] w-[29px] shrink-0 2xl:h-[58px] 2xl:w-[58px]" />
                     <span className="shrink-0 uppercase">{game.name}</span>
-                  </Button>
+                  </span>
                 </div>
               );
             })}
