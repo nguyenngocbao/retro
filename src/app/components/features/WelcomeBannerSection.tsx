@@ -77,7 +77,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
         alt=""
         className="absolute left-0 top-[-94px] z-[-1] h-full w-full object-cover transition-all lg:h-screen"
       />
-      <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:flex lg:h-[calc(100vh_-_292px)] lg:max-w-[calc(100%_-_72px)] lg:gap-[40px] xl:h-auto xl:max-w-[calc(100%_-_300px)] 2xl:mt-[180px] 2xl:max-w-[1227px] 2xl:gap-[72px]">
+      <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:flex lg:h-[calc(100vh_-_292px)] lg:max-w-[calc(100%_-_72px)] lg:gap-[40px] xl:max-w-[calc(100%_-_300px)] 2xl:mt-[180px] 2xl:h-[calc(100vh_-_413px)] 2xl:h-auto 2xl:max-w-[1227px] 2xl:gap-[72px]">
         <div className="lg:w-[450px] lg:flex-shrink-0 2xl:w-[554px]">
           <h1 className="mb-[10px] text-[20px] font-bold leading-[28px] lg:mb-[30px] lg:text-[40px] lg:leading-[48px]">
             WELCOME TO
@@ -98,7 +98,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
             {...settings}
             afterChange={i => setSlideIndex(i)}
           >
-            <div className="relative flex h-[280px] w-[346px] flex-col md:h-[450px]">
+            <div className="relative flex h-[280px] w-[346px] flex-col outline-0 md:h-[450px]">
               <Image
                 unoptimized
                 alt="story of mario 1"
@@ -115,7 +115,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
                 <span className="shrink-0">SUPER MARIO BROS 2</span>
               </Button>
             </div>
-            <div className="relative flex h-[280px] w-[346px] flex-col md:h-[450px]">
+            <div className="relative flex h-[280px] w-[346px] flex-col outline-0 md:h-[450px]">
               <Image
                 unoptimized
                 alt="story of mario 2"
