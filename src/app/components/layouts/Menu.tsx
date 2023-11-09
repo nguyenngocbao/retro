@@ -101,7 +101,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
                     <li
                       key={menu.label}
                       className={mergeClasses(
-                        'h-[52px] w-full bg-bg2 lg:h-full lg:flex-[1] lg:justify-end',
+                        'bg-bg2 h-[52px] w-full lg:h-full lg:flex-[1] lg:justify-end',
                         isActive(child.value) && 'text-primary3'
                       )}
                     >
