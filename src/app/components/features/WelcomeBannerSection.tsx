@@ -40,8 +40,8 @@ const horizontalSettings = {
 };
 
 const backgrounds = [
-  ['welcome-banner-bg.png', 'welcome-banner-bg-pc.png'],
-  ['welcome-banner-bg2.png', 'welcome-banner-bg2-pc.png']
+  ['/welcome-banner-bg.png', '/welcome-banner-bg-pc.png'],
+  ['/welcome-banner-bg2.png', '/welcome-banner-bg2-pc.png']
 ];
 
 export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
