@@ -11,7 +11,7 @@ export const JoinTheWorldSection: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `relative flex h-[621px] flex-col justify-end bg-bg5 bg-cover bg-center text-center xl:h-[800px] xl:bg-bg5-pc`,
+        `relative flex h-[621px] flex-col justify-end bg-join-the-world bg-cover bg-center text-center xl:h-[800px] xl:bg-join-the-world-pc`,
         className
       )}
       {...props}

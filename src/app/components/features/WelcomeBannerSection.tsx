@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 'use client';
 
-import { FC, HTMLAttributes, useEffect, useRef } from 'react';
+import { FC, HTMLAttributes, useRef, useState } from 'react';
 
 import { CrossbowIcon } from '@/app/assets/icons/Crossbow';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
@@ -23,7 +23,7 @@ const settings = {
   slidesToScroll: 1,
   arrows: false,
   autoplaySpeed: 3000,
-  // autoplay: true,
+  autoplay: true,
   adaptiveHeight: true
 };
 
@@ -39,12 +39,18 @@ const horizontalSettings = {
   adaptiveHeight: true
 };
 
+const backgrounds = [
+  ['welcome-banner-bg.png', 'welcome-banner-bg-pc.png'],
+  ['welcome-banner-bg2.png', 'welcome-banner-bg2-pc.png']
+];
+
 export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
   className,
   ...props
 }) => {
   const topSliderRef = useRef(null);
   const bottomSliderRef = useRef(null);
+  const [slideIndex, setSlideIndex] = useState(0);
 
   const onClickNext = ref => {
     ref.current.slickPrev();
@@ -54,36 +60,24 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
     ref.current.slickNext();
   };
 
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 1000);
-
-    return () => videoRef.current.stop();
-  }, []);
-
   return (
     <section
       className={mergeClasses(
-        `relative lg:flex lg:h-screen lg:flex-col lg:justify-between`,
+        `relative lg:flex lg:flex-col lg:justify-between`,
         className
       )}
       {...props}
     >
-      <video
-        ref={videoRef}
-        src={
-          (process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + '/trailler.mp4#t=0.1'
-        }
-        poster={(process?.env?.NEXT_PUBLIC_ROOT_PATH ?? '') + '/bg1.png'}
-        className="absolute left-0 top-[-94px] z-[-1] h-full w-full object-cover lg:h-screen"
-        loop
-        autoPlay
-        muted
+      <Image
+        unoptimized
+        width={10}
+        height={10}
+        src={backgrounds[slideIndex][0]}
+        lgSrc={backgrounds[slideIndex][1]}
+        alt=""
+        className="absolute left-0 top-[-94px] z-[-1] h-full w-full object-cover transition-all lg:h-screen"
       />
-      <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:flex lg:h-[calc(100vh_-_141px)] lg:max-w-[calc(100%_-_72px)] lg:gap-[40px] xl:mt-[180px] xl:max-w-[1227px] xl:gap-[72px]">
+      <div className="mx-auto mt-[95px] w-full max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:flex lg:max-w-[calc(100%_-_72px)] lg:gap-[40px] xl:mt-[140px] xl:max-w-[1227px] xl:gap-[72px] 2xl:mt-[180px]">
         <div className="lg:w-[450px] lg:flex-shrink-0 xl:w-[554px]">
           <h1 className="mb-[10px] text-[20px] font-bold leading-[28px] lg:mb-[30px] lg:text-[40px] lg:leading-[48px]">
             WELCOME TO
@@ -96,10 +90,14 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <PlayNowButton />
         </div>
         <div
-          className="md:mx-[50px] lg:relative lg:mx-[unset] lg:max-w-[calc(100vw_-_562px)] lg:flex-[1] xl:max-w-[calc(calc(100vw_-_626px)_-_calc(100vw_-_1227px))]"
+          className="md:mx-[50px] lg:relative lg:mx-[unset] lg:min-h-[391px] lg:max-w-[calc(100vw_-_562px)] lg:flex-[1] xl:min-h-[530px] xl:max-w-[calc(calc(100vw_-_626px)_-_calc(100vw_-_1227px))]"
           id="welcome-banner"
         >
-          <Slider ref={topSliderRef} {...settings}>
+          <Slider
+            ref={topSliderRef}
+            {...settings}
+            afterChange={i => setSlideIndex(i)}
+          >
             <div className="relative flex h-[280px] w-[346px] flex-col md:h-[450px]">
               <Image
                 unoptimized
@@ -111,7 +109,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
               />
               <Button
                 variant="secondary"
-                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[50px] lg:left-0 lg:translate-x-0  xl:h-[74px] xl:px-[21px] xl:text-[30px] xl:leading-[36px]"
+                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[50px] lg:left-[unset] lg:right-[122px] lg:translate-x-0 lg:gap-[21px]  xl:h-[74px] xl:px-[21px] xl:text-[30px] xl:leading-[36px]"
               >
                 <CrossbowIcon className="h-[29px] w-[29px] shrink-0 xl:h-[58px] xl:w-[58px]" />
                 <span className="shrink-0">SUPER MARIO BROS 2</span>
@@ -128,7 +126,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
               />
               <Button
                 variant="secondary"
-                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[50px] lg:left-0 lg:translate-x-0  xl:h-[74px] xl:px-[21px] xl:text-[30px] xl:leading-[36px]"
+                className="absolute bottom-[5px] left-[50%] h-[41px] w-max translate-x-[-50%] gap-[10px] px-[10px] lg:bottom-[50px] lg:left-[unset] lg:right-[122px] lg:translate-x-0 lg:gap-[21px]  xl:h-[74px] xl:px-[21px] xl:text-[30px] xl:leading-[36px]"
               >
                 <SwordIcon className="h-[29px] w-[29px] shrink-0 xl:h-[58px] xl:w-[58px]" />
                 <span className="shrink-0">OUT RUN</span>

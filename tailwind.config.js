@@ -30,31 +30,41 @@ module.exports = {
         'bg-title-5': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
         }/bg-title-5.svg')`,
-        bg2: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg2.png')`,
-        'bg2-gradient': `url('${
+
+        'game1-bg': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/bg2-gradient.png')`,
-        'bg2-gradient-pc': `url('${
+        }/game1-bg.png')`,
+        'game1-bg-pc': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/bg2-gradient-pc.png')`,
-        bg3: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg3.png')`,
-        'bg3-pc': `url('${
+        }/game1-bg-pc.png')`,
+
+        'game2-bg': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/bg3-pc.png')`,
-        bg4: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg4.png')`,
-        'bg4-pc': `url('${
+        }/game2-bg.png')`,
+        'game2-bg-pc': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/bg4-pc.png')`,
-        bg5: `url('${process.env.NEXT_PUBLIC_ROOT_PATH ?? ''}/bg5.png')`,
-        'bg5-pc': `url('${
+        }/game2-bg-pc.png')`,
+
+        'game3-bg': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/bg5-pc.png')`,
+        }/game3-bg.png')`,
+        'game3-bg-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/game3-bg-pc.png')`,
+
         'game4-bg': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
         }/game4-bg.png')`,
         'game4-bg-pc': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/game4-bg-pc.png')`
+        }/game4-bg-pc.png')`,
+
+        'join-the-world': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/join-the-world-bg.png')`,
+        'join-the-world-pc': `url('${
+          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
+        }/join-the-world-bg-pc.png')`
       }
     }
   },

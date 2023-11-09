@@ -16,7 +16,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
     <>
       <section
         className={mergeClasses(
-          'bg-bg2-gradient bg-cover bg-bottom bg-no-repeat pb-[82px] pt-[23px] md:py-[50px] lg:bg-bg2-gradient-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
+          'bg-game1-bg bg-cover bg-bottom bg-no-repeat pb-[82px] pt-[23px] md:py-[50px] lg:bg-game1-bg-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
           className
         )}
         {...props}
@@ -40,7 +40,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center  gap-[27px] bg-bg3 bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-bg3-pc lg:px-0 xl:py-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game2-bg  bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 xl:py-[139px]',
           className
         )}
         {...props}
@@ -58,7 +58,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center  gap-[27px] bg-bg3 bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-bg3-pc lg:px-0 xl:py-[139px]',
+          'flex  flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 xl:py-[139px]',
           className
         )}
         {...props}
