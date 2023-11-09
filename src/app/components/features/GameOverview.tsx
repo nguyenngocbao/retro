@@ -2,6 +2,7 @@
 
 import { FC, HTMLAttributes } from 'react';
 
+import { GAME_OVERVIEW } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
 import { Image } from '../images/Image';
@@ -34,14 +35,10 @@ export const GameOverview: FC<HTMLAttributes<HTMLElement>> = ({
           GAME OVERVIEW
         </h2>
         <div className="mb-[11px] flex h-[69px] w-[263px] items-center justify-center bg-bg-title-2 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black md:mb-[30px] md:ml-auto lg:ml-[unset] 2xl:mb-[31px] 2xl:ml-[unset] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
-          THE NEW BEGINNING
+          {GAME_OVERVIEW.title}
         </div>
         <p className="text-[16px] leading-[22px] text-white md:mx-[-35px] lg:mx-[unset]  2xl:text-[23px] 2xl:uppercase 2xl:leading-[30px]">
-          Kratos is a father again. As mentor and protector to Atreus, a son
-          determined to earn his respect, he is forced to deal with and control
-          the rage that has long defined him while out in a very dangerous world
-          with his son. His vengeance against the Gods of Olympus behind him,
-          Kratos now lives in the realm of Norse deities and monsters.
+          {GAME_OVERVIEW.description}
         </p>
       </div>
     </section>

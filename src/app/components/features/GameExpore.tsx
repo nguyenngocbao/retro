@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FC, HTMLAttributes } from 'react';
 
 import { mergeClasses } from '@/app/utils';
@@ -12,6 +13,9 @@ interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
   titleIcon: any;
   name: string;
   desc: string;
+  href: string;
+  levelToPlay: number;
+  bossToBeat: number;
 }
 
 export const GameExpore: FC<GameExporeProps> = ({
@@ -21,6 +25,9 @@ export const GameExpore: FC<GameExporeProps> = ({
   className,
   name,
   desc,
+  levelToPlay,
+  bossToBeat,
+  href = '',
   ...props
 }) => {
   return (
@@ -55,7 +62,7 @@ export const GameExpore: FC<GameExporeProps> = ({
         <div className="mb-[19px] flex max-w-[334px] justify-between gap-[34px] 2xl:mb-[28px]">
           <div className="flex items-center gap-[7px]">
             <p className="text-[48px] font-bold leading-[48px] 2xl:text-[72px] 2xl:leading-[72px]">
-              100
+              {levelToPlay}
             </p>
             <p className="w-[61px] text-[16px] leading-[24px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
               LEVEL TO PLAY
@@ -63,14 +70,16 @@ export const GameExpore: FC<GameExporeProps> = ({
           </div>
           <div className="flex items-center gap-[7px]">
             <p className="text-[48px] font-bold leading-[48px] 2xl:text-[72px] 2xl:leading-[72px]">
-              20
+              {bossToBeat}
             </p>
             <p className="w-[62px] text-[16px] leading-[24px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
               BOSS TO BEAT
             </p>
           </div>
         </div>
-        <PlayNowButton />
+        <Link href={href}>
+          <PlayNowButton />
+        </Link>
       </div>
     </div>
   );

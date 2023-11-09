@@ -2,8 +2,7 @@
 
 import { FC, HTMLAttributes } from 'react';
 
-import { CrossbowIcon } from '@/app/assets/icons/Crossbow';
-import { SwordIcon } from '@/app/assets/icons/Sword';
+import { GAME_EXPORES } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
 import { GameExpore } from './GameExpore';
@@ -15,6 +14,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <>
       <section
+        id="game-expore"
         className={mergeClasses(
           'bg-game1-bg bg-cover bg-bottom bg-no-repeat pb-[82px] pt-[23px] md:py-[50px] lg:bg-game1-bg-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
           className
@@ -30,11 +30,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             biggest communities in gaming and start crafting today!
           </p>
           <GameExpore
-            imagePath="/game-cd1.png"
-            imageAlt="game1"
-            titleIcon={CrossbowIcon}
-            name="SUPER MARIO BROS 2"
-            desc="Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users"
+            imagePath={GAME_EXPORES.SUPPER_MARIO_BROS_2.image}
+            imageAlt={GAME_EXPORES.SUPPER_MARIO_BROS_2.description}
+            titleIcon={GAME_EXPORES.SUPPER_MARIO_BROS_2.icon}
+            name={GAME_EXPORES.SUPPER_MARIO_BROS_2.name}
+            desc={GAME_EXPORES.SUPPER_MARIO_BROS_2.description}
+            href={GAME_EXPORES.SUPPER_MARIO_BROS_2.playNowLink}
+            levelToPlay={GAME_EXPORES.SUPPER_MARIO_BROS_2.levelToPlay}
+            bossToBeat={GAME_EXPORES.SUPPER_MARIO_BROS_2.bossToBeat}
           />
         </div>
       </section>
@@ -48,11 +51,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
         <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
-            imagePath="/game-cd2.png"
-            imageAlt="game2"
-            titleIcon={SwordIcon}
-            name="OUT RUN"
-            desc="Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users"
+            imagePath={GAME_EXPORES.OUT_RUN.image}
+            imageAlt={GAME_EXPORES.OUT_RUN.description}
+            titleIcon={GAME_EXPORES.OUT_RUN.icon}
+            name={GAME_EXPORES.OUT_RUN.name}
+            desc={GAME_EXPORES.OUT_RUN.description}
+            href={GAME_EXPORES.OUT_RUN.playNowLink}
+            levelToPlay={GAME_EXPORES.OUT_RUN.levelToPlay}
+            bossToBeat={GAME_EXPORES.OUT_RUN.bossToBeat}
           />
         </div>
       </section>
@@ -65,11 +71,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       >
         <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
-            imagePath="/game-cd3.png"
-            imageAlt="game3"
-            titleIcon={CrossbowIcon}
-            name="DONKEY KONG"
-            desc="Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users"
+            imagePath={GAME_EXPORES.DONKEY_KONG.image}
+            imageAlt={GAME_EXPORES.DONKEY_KONG.description}
+            titleIcon={GAME_EXPORES.DONKEY_KONG.icon}
+            name={GAME_EXPORES.DONKEY_KONG.name}
+            desc={GAME_EXPORES.DONKEY_KONG.description}
+            href={GAME_EXPORES.DONKEY_KONG.playNowLink}
+            levelToPlay={GAME_EXPORES.DONKEY_KONG.levelToPlay}
+            bossToBeat={GAME_EXPORES.DONKEY_KONG.bossToBeat}
           />
         </div>
       </section>
@@ -83,11 +92,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
         <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
-            imagePath="/game-cd1.png"
-            imageAlt="game4"
-            titleIcon={SwordIcon}
-            name="OUT RUN VER 2.0"
-            desc="Over the last two weeks, how often have you been bothered by the following problems? feel Exhausted all the time base on the collecting date of users"
+            imagePath={GAME_EXPORES.OUT_RUN_VER_2.image}
+            imageAlt={GAME_EXPORES.OUT_RUN_VER_2.description}
+            titleIcon={GAME_EXPORES.OUT_RUN_VER_2.icon}
+            name={GAME_EXPORES.OUT_RUN_VER_2.name}
+            desc={GAME_EXPORES.OUT_RUN_VER_2.description}
+            href={GAME_EXPORES.OUT_RUN_VER_2.playNowLink}
+            levelToPlay={GAME_EXPORES.OUT_RUN_VER_2.levelToPlay}
+            bossToBeat={GAME_EXPORES.OUT_RUN_VER_2.bossToBeat}
           />
         </div>
       </section>
