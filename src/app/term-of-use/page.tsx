@@ -2,75 +2,100 @@
 export default function () {
   return (
     <main className="mx-auto mb-[95px] mt-[95px] max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:max-w-[calc(100%_-_300px)] 2xl:mt-[180px] 2xl:max-w-[1227px]">
+      <h1 className="text-[32px] font-bold">Terms and Conditions</h1>
+
       <p>
-        Welcome to our website. If you continue to browse and use this website,
-        you are agreeing to comply with and be bound by the following terms and
-        conditions of use, which together with our privacy policy govern
-        [business name]'s relationship with you in relation to this website. If
-        you disagree with any part of these terms and conditions, please do not
-        use our website.
+        These terms and conditions ("Terms") apply to your access and use of
+        RETROCRAFT (the "Game"). Please read them carefully.
       </p>
+
+      <h2 className="text-[24px] font-bold">Acceptance of Terms</h2>
+
       <p>
-        The term '[business name]' or 'us' or 'we' refers to the owner of the
-        website whose registered office is [address]. Our company registration
-        number is [company registration number and place of registration]. The
-        term 'you' refers to the user or viewer of our website.
+        By downloading, accessing, or using the Game, you accept and agree to be
+        bound by these Terms. If you do not agree, do not download, access or
+        use the Game.
       </p>
-      <p>The use of this website is subject to the following terms of use:</p>
-      <ul>
-        <li>
-          The content of the pages of this website is for your general
-          information and use only. It is subject to change without notice.
-        </li>
-        <li>
-          This website uses cookies to monitor browsing preferences. If you do
-          allow cookies to be used, the following personal information may be
-          stored by us for use by third parties: [insert list of information].
-        </li>
-        <li>
-          Neither we nor any third parties provide any warranty or guarantee as
-          to the accuracy, timeliness, performance, completeness or suitability
-          of the information and materials found or offered on this website for
-          any particular purpose. You acknowledge that such information and
-          materials may contain inaccuracies or errors and we expressly exclude
-          liability for any such inaccuracies or errors to the fullest extent
-          permitted by law.
-        </li>
-        <li>
-          Your use of any information or materials on this website is entirely
-          at your own risk, for which we shall not be liable. It shall be your
-          own responsibility to ensure that any products, services or
-          information available through this website meet your specific
-          requirements.
-        </li>
-        <li>
-          This website contains material which is owned by or licensed to us.
-          This material includes, but is not limited to, the design, layout,
-          look, appearance and graphics. Reproduction is prohibited other than
-          in accordance with the copyright notice, which forms part of these
-          terms and conditions.
-        </li>
-        <li>
-          All trade marks reproduced in this website which are not the property
-          of, or licensed to, the operator are acknowledged on the website.
-        </li>
-        <li>
-          Unauthorised use of this website may give rise to a claim for damages
-          and/or be a criminal offence.
-        </li>
-        <li>
-          From time to time this website may also include links to other
-          websites. These links are provided for your convenience to provide
-          further information. They do not signify that we endorse the
-          website(s). We have no responsibility for the content of the linked
-          website(s).
-        </li>
-        <li>
-          Your use of this website and any dispute arising out of such use of
-          the website is subject to the laws of England, Northern Ireland,
-          Scotland and Wales.
-        </li>
-      </ul>
+
+      <h2 className="text-[24px] font-bold">Game Access</h2>
+
+      <p>
+        We grant you a personal, non-exclusive, non-transferable,
+        non-sublicensable limited right and license to install and use one copy
+        of the Game for your personal, non-commercial use on a single device
+        owned or controlled by you.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Game Rules and Policies</h2>
+
+      <p>
+        You agree to follow all rules and policies applicable to the Game,
+        including codes of conduct. We may update the rules and policies at any
+        time. If you fail to comply, we may terminate your account and prohibit
+        you from using the Game.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Your Content</h2>
+
+      <p>
+        You are responsible for your use of the Game and all activity that
+        occurs under your account. You will not share objectionable, false,
+        inaccurate, or misleading content. We may remove any content or
+        terminate your account without prior notice if we determine it violates
+        these Terms or our policies.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Digital Rights Management</h2>
+
+      <p>
+        The Game may contain digital rights management technology to control
+        access to content and prevent unauthorized use. You agree not to
+        circumvent or disable this technology.
+      </p>
+
+      <h2 className="text-[24px] font-bold">
+        In-Game Virtual Currency and Items
+      </h2>
+
+      <p>
+        You may gain access to in-game currency ("virtual currency") or items by
+        playing the game or paying real money. They are licensed to you, not
+        sold, and can only be used in connection with the Game. Virtual currency
+        and item balances are non-transferable and do not hold real world value.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Termination</h2>
+
+      <p>
+        This Terms will continue until your access is terminated by us or we
+        cease providing the Game. We reserve the right to terminate your access
+        and account at any time for any reason.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Disclaimer of Warranty</h2>
+
+      <p>
+        THE GAME IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTY OF ANY KIND.
+        WE DISCLAIM ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Limitation of Liability</h2>
+
+      <p>
+        OUR TOTAL LIABILITY ARISING OUT OF OR RELATING TO THESE TERMS OR THE
+        GAME IS LIMITED TO THE GREATER OF $100 OR THE AMOUNT YOU PAID US IN THE
+        YEAR BEFORE THE LIABILITY AROSE.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Changes to Terms</h2>
+
+      <p>
+        We may revise these Terms from time to time and will update the "Last
+        Updated" date at the top when we make changes. Your continued use of the
+        Game signifies acceptance of the revised Terms.
+      </p>
+
+      <p>Last Updated: Nov 9 2023</p>
     </main>
   );
 }

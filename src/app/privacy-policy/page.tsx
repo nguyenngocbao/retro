@@ -2,75 +2,103 @@
 export default function () {
   return (
     <main className="mx-auto mb-[95px] mt-[95px] max-w-[calc(100%_-_38px)] lg:mt-[150px] lg:max-w-[calc(100%_-_300px)] 2xl:mt-[180px] 2xl:max-w-[1227px]">
+      <h1 className="text-[32px] font-bold">Privacy Policy</h1>
+
       <p>
-        Welcome to our website. If you continue to browse and use this website,
-        you are agreeing to comply with and be bound by the following terms and
-        conditions of use, which together with our privacy policy govern
-        [business name]'s relationship with you in relation to this website. If
-        you disagree with any part of these terms and conditions, please do not
-        use our website.
+        This privacy policy describes how RETROCRAFT collects, uses, and shares
+        information about you when you use our game RETROCRAFT.
       </p>
+
+      <h2 className="text-[24px] font-bold">Information We Collect</h2>
+
       <p>
-        The term '[business name]' or 'us' or 'we' refers to the owner of the
-        website whose registered office is [address]. Our company registration
-        number is [company registration number and place of registration]. The
-        term 'you' refers to the user or viewer of our website.
+        We collect information directly from you and automatically through your
+        use of the game. Information we collect directly includes your player
+        name, email address, and any other information you choose to provide.
       </p>
-      <p>The use of this website is subject to the following terms of use:</p>
+
+      <p>
+        Information collected automatically includes gameplay data such as your
+        score, levels completed, achievements earned, and gameplay preferences.
+        We use analytics tools to collect this information.
+      </p>
+
+      <h2 className="text-[24px] font-bold">How We Use Information</h2>
+
+      <p>
+        We use information we collect to provide, maintain, and improve the
+        game. We may use your information to:
+      </p>
+
+      <ul>
+        <li>Create and manage your player account</li>
+        <li>Provide customized gameplay experiences</li>
+        <li>Notify you of updates to the game</li>
+        <li>Respond to your requests for support</li>
+      </ul>
+
+      <p>
+        We may also use your information for marketing purposes to provide you
+        news and promotional materials about our games and services. You can
+        control marketing communications through your account settings.
+      </p>
+
+      <h2 className="text-[24px] font-bold">
+        Information Sharing and Disclosure
+      </h2>
+
+      <p>
+        We do not share your personal information except in the following
+        limited circumstances:
+      </p>
+
       <ul>
         <li>
-          The content of the pages of this website is for your general
-          information and use only. It is subject to change without notice.
+          With third party service providers working on our behalf who are bound
+          by confidentiality obligations.
         </li>
+        <li>If required to do so by law or court order.</li>
         <li>
-          This website uses cookies to monitor browsing preferences. If you do
-          allow cookies to be used, the following personal information may be
-          stored by us for use by third parties: [insert list of information].
-        </li>
-        <li>
-          Neither we nor any third parties provide any warranty or guarantee as
-          to the accuracy, timeliness, performance, completeness or suitability
-          of the information and materials found or offered on this website for
-          any particular purpose. You acknowledge that such information and
-          materials may contain inaccuracies or errors and we expressly exclude
-          liability for any such inaccuracies or errors to the fullest extent
-          permitted by law.
-        </li>
-        <li>
-          Your use of any information or materials on this website is entirely
-          at your own risk, for which we shall not be liable. It shall be your
-          own responsibility to ensure that any products, services or
-          information available through this website meet your specific
-          requirements.
-        </li>
-        <li>
-          This website contains material which is owned by or licensed to us.
-          This material includes, but is not limited to, the design, layout,
-          look, appearance and graphics. Reproduction is prohibited other than
-          in accordance with the copyright notice, which forms part of these
-          terms and conditions.
-        </li>
-        <li>
-          All trade marks reproduced in this website which are not the property
-          of, or licensed to, the operator are acknowledged on the website.
-        </li>
-        <li>
-          Unauthorised use of this website may give rise to a claim for damages
-          and/or be a criminal offence.
-        </li>
-        <li>
-          From time to time this website may also include links to other
-          websites. These links are provided for your convenience to provide
-          further information. They do not signify that we endorse the
-          website(s). We have no responsibility for the content of the linked
-          website(s).
-        </li>
-        <li>
-          Your use of this website and any dispute arising out of such use of
-          the website is subject to the laws of England, Northern Ireland,
-          Scotland and Wales.
+          In connection with a merger, sale, or acquisition of the company.
         </li>
       </ul>
+
+      <p>
+        We may share aggregated or de-identified information with third parties
+        for research, marketing, analytics or other purposes.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Data Retention</h2>
+
+      <p>
+        We retain your information only as long as necessary for the purposes
+        outlined in this policy unless a longer retention period is required by
+        law.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Security</h2>
+
+      <p>
+        We use appropriate technical and organizational safeguards to protect
+        your information. Despite these efforts, no security measures can
+        provide 100% security.
+      </p>
+
+      <h2 className="text-[24px] font-bold">Your Choices</h2>
+
+      <p>
+        You may request access to or deletion of your personal data, or restrict
+        its use, by contacting us.
+      </p>
+
+      <h2>Changes to this Policy</h2>
+
+      <p>
+        We may occasionally update this policy. When we do, we will revise the
+        "last updated" date above. We recommend you check back periodically for
+        updates.
+      </p>
+      <p>Last Updated: Nov 9 2023</p>
     </main>
   );
 }
