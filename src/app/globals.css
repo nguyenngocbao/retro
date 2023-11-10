@@ -11,6 +11,8 @@ html {
 main {
   scroll-behavior: smooth;
   scroll-padding-top: 30px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 @layer base {
