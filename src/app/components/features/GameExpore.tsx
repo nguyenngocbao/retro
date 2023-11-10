@@ -14,7 +14,7 @@ interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
   name: string;
   desc: string;
   levelToPlay: number;
-  bossToBeat: number;
+  levelToPlayContent: string;
   buttonName: string;
   buttonLink?: string;
   childrenClassName1?: string;
@@ -29,7 +29,7 @@ export const GameExpore: FC<GameExporeProps> = ({
   name,
   desc,
   levelToPlay,
-  bossToBeat,
+  levelToPlayContent,
   buttonName,
   buttonLink,
   childrenClassName1,
@@ -71,17 +71,17 @@ export const GameExpore: FC<GameExporeProps> = ({
               {levelToPlay}
             </p>
             <p className="w-[61px] text-[16px] leading-[24px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
-              LEVEL TO PLAY
+              {levelToPlayContent}
             </p>
           </div>
-          <div className="flex items-center gap-[7px]">
+          {/* <div className="flex items-center gap-[7px]">
             <p className="text-[48px] font-bold leading-[48px] 2xl:text-[72px] 2xl:leading-[72px]">
               {bossToBeat}
             </p>
             <p className="w-[62px] text-[16px] leading-[24px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
               BOSS TO BEAT
             </p>
-          </div>
+          </div> */}
         </div>
         <Link href={buttonLink}>
           <Button

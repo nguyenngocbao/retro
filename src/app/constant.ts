@@ -9,8 +9,9 @@ export const HEADER_MENU_OPTIONS: Option[] = [
     blank: false
   },
   {
-    label: 'GAMES',
-    value: '/#game-expore',
+    label: 'HOW TO PLAY',
+    value:
+      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
     blank: false
   },
   {
@@ -76,7 +77,7 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
 export const WELCOME_BANNER = {
   games: [
     {
-      name: 'SUPER MARIO BROS 2',
+      name: 'CAR RACING',
       icon: CrossbowIcon,
       image: '/character1.png',
       description:
@@ -117,29 +118,16 @@ export const WELCOME_BANNER = {
 };
 
 export const GAME_EXPORES = {
-  SUPPER_MARIO_BROS_2: {
-    name: 'SUPER MARIO BROS 2',
-    icon: CrossbowIcon,
-    image: '/game-cd1.png',
-    description:
-      'Battle with pixelated tanks in destructible terrain - take aim, fire missiles, and blow up opponents in this reimagined retro arcade tank shooter.',
-    levelToPlay: 100,
-    bossToBeat: 20,
-    buttonLink:
-      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
-    buttonName: 'PLAY NOW'
-  },
   OUT_RUN: {
     name: 'TANK WAR',
     icon: SwordIcon,
     image: '/game-cd2.png',
     description:
-      'Battle with pixelated tanks in destructible terrain - take aim, fire missiles, and blow up opponents in this reimagined retro arcade tank shooter.',
-    levelToPlay: 100,
-    bossToBeat: 20,
-    buttonLink:
-      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
-    buttonName: 'PLAY NOW'
+      'Experience 90s tank warfare meets Minecraft battles! Destroy enemies, earn money, and dominate the battlefield for thrilling rewards!',
+    levelToPlay: 5,
+    levelToPlayContent: 'Mode to battle',
+    buttonLink: '',
+    buttonName: 'BATTlE TO EARN'
   },
   DONKEY_KONG: {
     name: 'CAR RACING',
@@ -147,23 +135,21 @@ export const GAME_EXPORES = {
     image: '/game-cd3.png',
     description:
       'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
-    levelToPlay: 100,
-    bossToBeat: 20,
-    buttonLink:
-      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
-    buttonName: 'PLAY NOW'
+    levelToPlay: 70,
+    levelToPlayContent: 'Level to race',
+    buttonLink: '',
+    buttonName: 'RACE TO EARN'
   },
   OUT_RUN_VER_2: {
-    name: 'CAR RACING VER 2.0',
+    name: 'MARIO CART',
     icon: SwordIcon,
     image: '/game-cd1.png',
     description:
       'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
-    levelToPlay: 100,
-    bossToBeat: 20,
-    buttonLink:
-      'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft',
-    buttonName: 'PLAY NOW'
+    levelToPlay: 20,
+    levelToPlayContent: 'Level to play',
+    buttonLink: '',
+    buttonName: 'SKILL TO EARN'
   }
 };
 
@@ -180,7 +166,7 @@ export const FEATURE_GAMES = {
   games: [
     {
       image: '/supper-mario-bros-2-bg.png',
-      name: 'SUPER MARIO BROS 2',
+      name: 'MARIO BROS 2',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'

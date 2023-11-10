@@ -31,29 +31,6 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             and earn $Retro tokens as you play!
           </p>
           <GameExpore
-            imagePath={GAME_EXPORES.SUPPER_MARIO_BROS_2.image}
-            imageAlt={GAME_EXPORES.SUPPER_MARIO_BROS_2.description}
-            titleIcon={GAME_EXPORES.SUPPER_MARIO_BROS_2.icon}
-            name={GAME_EXPORES.SUPPER_MARIO_BROS_2.name}
-            desc={GAME_EXPORES.SUPPER_MARIO_BROS_2.description}
-            buttonName={GAME_EXPORES.SUPPER_MARIO_BROS_2.buttonName}
-            buttonLink={GAME_EXPORES.SUPPER_MARIO_BROS_2.buttonLink}
-            levelToPlay={GAME_EXPORES.SUPPER_MARIO_BROS_2.levelToPlay}
-            bossToBeat={GAME_EXPORES.SUPPER_MARIO_BROS_2.bossToBeat}
-            childrenClassName1="hidden-ani-from-left"
-            childrenClassName2="hidden-ani-from-right"
-          />
-        </div>
-      </section>
-      <section
-        className={mergeClasses(
-          'ani-scale-bg flex flex-col items-center justify-center  gap-[27px] bg-game2-bg  bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 2xl:py-[139px]',
-          className
-        )}
-        {...props}
-      >
-        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
-          <GameExpore
             className="md:flex-row-reverse"
             imagePath={GAME_EXPORES.OUT_RUN.image}
             imageAlt={GAME_EXPORES.OUT_RUN.description}
@@ -63,7 +40,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonName={GAME_EXPORES.OUT_RUN.buttonName}
             buttonLink={GAME_EXPORES.OUT_RUN.buttonLink}
             levelToPlay={GAME_EXPORES.OUT_RUN.levelToPlay}
-            bossToBeat={GAME_EXPORES.OUT_RUN.bossToBeat}
+            levelToPlayContent={GAME_EXPORES.OUT_RUN.levelToPlayContent}
             childrenClassName2="hidden-ani-from-left"
             childrenClassName1="hidden-ani-from-right"
           />
@@ -86,7 +63,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonName={GAME_EXPORES.DONKEY_KONG.buttonName}
             buttonLink={GAME_EXPORES.DONKEY_KONG.buttonLink}
             levelToPlay={GAME_EXPORES.DONKEY_KONG.levelToPlay}
-            bossToBeat={GAME_EXPORES.DONKEY_KONG.bossToBeat}
+            levelToPlayContent={GAME_EXPORES.DONKEY_KONG.levelToPlayContent}
             childrenClassName1="hidden-ani-from-left"
             childrenClassName2="hidden-ani-from-right"
           />
@@ -110,7 +87,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonName={GAME_EXPORES.OUT_RUN_VER_2.buttonName}
             buttonLink={GAME_EXPORES.OUT_RUN_VER_2.buttonLink}
             levelToPlay={GAME_EXPORES.OUT_RUN_VER_2.levelToPlay}
-            bossToBeat={GAME_EXPORES.OUT_RUN_VER_2.bossToBeat}
+            levelToPlayContent={GAME_EXPORES.OUT_RUN_VER_2.levelToPlayContent}
             childrenClassName2="hidden-ani-from-left"
             childrenClassName1="hidden-ani-from-right"
           />
