@@ -164,7 +164,7 @@ export const FEATURE_GAMES = {
   games: [
     {
       image: '/supper-mario-bros-2-bg.png',
-      name: 'MARIO BROS 2',
+      name: 'Skillful Survivor',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
