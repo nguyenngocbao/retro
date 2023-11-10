@@ -1,9 +1,12 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 // import Typed from 'typed.js';
 
 export default function Animation() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -40,6 +43,6 @@ export default function Animation() {
     scaleBgEl.forEach(el => {
       observer.observe(el);
     });
-  }, []);
+  }, [pathname]);
   return null;
 }
