@@ -3,6 +3,7 @@ import { Space_Grotesk } from 'next/font/google';
 import Animation from './components/Animation';
 import { Footer } from './components/layouts/Footer';
 import { Header } from './components/layouts/Header';
+import { Logo } from './components/Logo';
 
 import './globals.css';
 
@@ -21,11 +22,19 @@ const font = Space_Grotesk({
 export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head></head>
+      <head>
+        <link
+          rel="preload"
+          as="font"
+          href="/logo_retrocraft.png"
+          type="image/png"
+        />
+      </head>
       <body
         suppressHydrationWarning={true}
         className={font.className + ' bg-black'}
       >
+        <Logo />
         <Header />
         {children}
         <Footer />

@@ -167,6 +167,17 @@ main {
   }
 }
 
+@keyframes spread {
+  to {
+    filter: drop-shadow(0 0 1rem #ffbe53);
+  }
+}
+
+.logo-spread {
+  -webkit-animation: spread 0.9s both;
+  animation: spread 0.9s both;
+  will-change: filter;
+}
 .jello-horizontal {
   -webkit-animation: jello-horizontal 0.9s 0.5s;
   animation: jello-horizontal 0.9s 0.5s;
@@ -179,7 +190,7 @@ main {
 
 .hidden-ani {
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .hidden-ani-from-left {
   opacity: 0;

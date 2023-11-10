@@ -46,6 +46,7 @@ export function Header() {
                 src="/retrocraft.svg"
                 alt="retro-game"
                 unoptimized
+                priority
               />
             </Link>
             <Button
