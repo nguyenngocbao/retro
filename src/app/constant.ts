@@ -132,7 +132,7 @@ export const GAME_EXPORES = {
   DONKEY_KONG: {
     name: 'CAR RACING',
     icon: CrossbowIcon,
-    image: '/game-cd3.png',
+    image: '/game-cd1.png',
     description:
       'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
     levelToPlay: 70,
@@ -143,7 +143,7 @@ export const GAME_EXPORES = {
   OUT_RUN_VER_2: {
     name: 'MARIO CART',
     icon: SwordIcon,
-    image: '/game-cd1.png',
+    image: '/game-cd3.png',
     description:
       'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
     levelToPlay: 20,
