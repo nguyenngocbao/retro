@@ -7,7 +7,34 @@ import { useEffect } from 'react';
 export default function Animation() {
   const pathname = usePathname();
 
-  useEffect(() => {
+  const animationInVisible = (classNames: string[]) => {
+    const cancelObservers: IntersectionObserver[] = [];
+
+    classNames.forEach(className => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(className);
+          } else {
+            entry.target.classList.remove(className);
+          }
+        });
+      });
+
+      const els = document.querySelectorAll(`.${className}`);
+      els.forEach(el => {
+        observer.observe(el);
+      });
+
+      cancelObservers.push(observer);
+    });
+
+    return () => {
+      cancelObservers.forEach(o => o.disconnect());
+    };
+  };
+
+  const animationOnVisibile = () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -26,7 +53,6 @@ export default function Animation() {
       '.hidden-ani-from-right'
     );
     const scrollUpFromBotEl = document.querySelectorAll('.hidden-ani-from-bot');
-    const scaleBgEl = document.querySelectorAll('.ani-scale-bg');
 
     scrollUpEl.forEach(el => {
       observer.observe(el);
@@ -40,9 +66,20 @@ export default function Animation() {
     scrollUpFromBotEl.forEach(el => {
       observer.observe(el);
     });
-    scaleBgEl.forEach(el => {
-      observer.observe(el);
-    });
+
+    return observer;
+  };
+
+  useEffect(() => {
+    const animationInVisibleObserverCancelation = animationInVisible([
+      'jello-horizontal',
+      'jello-vertical'
+    ]);
+    const animationOnVisibileObserver = animationOnVisibile();
+    return () => {
+      animationInVisibleObserverCancelation();
+      animationOnVisibileObserver.disconnect();
+    };
   }, [pathname]);
   return null;
 }

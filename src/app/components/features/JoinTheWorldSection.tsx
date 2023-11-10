@@ -32,7 +32,7 @@ export const JoinTheWorldSection: FC<HTMLAttributes<HTMLElement>> = ({
         >
           <Button
             variant="secondary"
-            className="mx-auto h-[50px] w-[197px] 2xl:h-[57px] 2xl:w-[171px]"
+            className="jello-horizontal jello-vertical mx-auto h-[50px] w-[197px] 2xl:h-[57px] 2xl:w-[171px]"
           >
             JOIN NOW
           </Button>
