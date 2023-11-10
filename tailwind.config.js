@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors: {
         black: '#262626',
-        secondary: '#FFBE53'
+        secondary: '#FFBE53',
+        gr: '#1dc241'
       },
       fontFamily: {
         sans: ['var(--font-space-grotesk)']
@@ -67,6 +68,9 @@ module.exports = {
         'join-the-world-pc': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
         }/join-the-world-bg-pc.png')`
+      },
+      boxShadow: {
+        gr: '3px 3px #1dc241'
       }
     }
   },
@@ -75,6 +79,9 @@ module.exports = {
       addUtilities({
         '.flip-y-360': {
           transform: 'rotateY(360deg)'
+        },
+        '.flip-x-360': {
+          transform: 'rotateX(360deg)'
         },
         '.text-shadow': {
           'text-shadow': '1px 1px black'

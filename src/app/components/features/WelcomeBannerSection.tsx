@@ -56,7 +56,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `relative lg:flex lg:flex-col lg:justify-between`,
+        `hidden-ani relative lg:flex lg:flex-col lg:justify-between`,
         className
       )}
       {...props}
@@ -83,9 +83,9 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           <Link href="https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft">
             <Button
               variant="secondary"
-              className="relative mb-[30px] ml-[32px] h-[36px] w-[140px] md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
+              className="group relative mb-[30px] ml-[32px] h-[36px] w-[140px] hover:shadow-gr md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
             >
-              <FourLeafsIcon className="absolute left-0 translate-x-[-69%] 2xl:h-[76px] 2xl:w-[76px]" />
+              <FourLeafsIcon className="absolute left-0 translate-x-[-69%] transition-all group-hover:rotate-90 2xl:h-[76px] 2xl:w-[76px]" />
               PLAY NOW
             </Button>
           </Link>

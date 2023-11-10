@@ -1,5 +1,6 @@
 import { Space_Grotesk } from 'next/font/google';
 
+import Animation from './components/Animation';
 import { Footer } from './components/layouts/Footer';
 import { Header } from './components/layouts/Header';
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Animation />
       </body>
     </html>
   );

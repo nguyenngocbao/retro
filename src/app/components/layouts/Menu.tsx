@@ -125,7 +125,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
 
         <li
           className={mergeClasses(
-            'group mt-[12px] h-[52px] bg-secondary text-black transition-all hover:scale-x-105 hover:scale-y-110 lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
+            'group mt-[12px] h-[52px] bg-secondary text-black transition-all hover:scale-x-105 hover:scale-y-110 hover:shadow-gr lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
             isActive(CONNECT_OPTION.value) && 'text-primary3'
           )}
         >
@@ -134,7 +134,7 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
             href={String(CONNECT_OPTION.value)}
           >
             <span>BUY</span>
-            <span className="ml-[4px] mr-[2px] transition-all group-hover:text-[#1dc241] group-hover:flip-y-360 group-hover:text-shadow">
+            <span className="ml-[4px] mr-[2px] transition-all group-hover:text-gr group-hover:flip-y-360 group-hover:text-shadow">
               $
             </span>
             <span>RETRO</span>

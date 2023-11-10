@@ -42,3 +42,110 @@ main {
     height: 100% !important;
   }
 }
+
+/* animation */
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.jello-horizontal {
+  -webkit-animation: jello-horizontal 0.9s 5.1s;
+  animation: jello-horizontal 0.9s 5.1s;
+}
+
+@media screen and (min-width: 1024px) {
+  .jello-horizontal {
+    -webkit-animation: jello-horizontal 0.9s 5.9s;
+    animation: jello-horizontal 0.9s 5.9s;
+  }
+}
+.hidden-ani {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.hidden-ani-from-left {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateX(-30%);
+}
+.hidden-ani-from-right {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateX(30%);
+}
+.hidden-ani-from-bot {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(10%);
+}
+.ani-scale-bg {
+}
+
+@media (prefers-reduced-motion) {
+  .hidden-ani {
+    transition: none;
+  }
+}
+
+.show-ani {
+  opacity: 1;
+  transform: translateX(0);
+}

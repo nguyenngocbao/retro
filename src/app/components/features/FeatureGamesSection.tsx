@@ -64,17 +64,17 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
         height={750}
       />
       <div className="absolute left-[50%] top-[50%] z-[2] h-full w-full max-w-[calc(100%_-_38px)] translate-x-[-50%] translate-y-[-50%] lg:max-w-[calc(100%_-_300px)] 2xl:h-auto 2xl:max-w-[1227px]">
-        <div className="flex flex-col items-center justify-center gap-[19px] pb-[29px] pt-[56px] xl:pt-[80px] 2xl:pb-[32px]">
+        <div className="hidden-ani-from-bot flex flex-col items-center justify-center gap-[19px] pb-[29px] pt-[56px] xl:pt-[80px] 2xl:pb-[32px]">
           <div className="flex h-[62px] w-[234px] items-center justify-center bg-bg-title-4 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-secondary lg:h-[69px] lg:w-[263px] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
             {FEATURE_GAMES.title}
           </div>
-          <p className="text-center text-[16px] leading-[24px] text-black 2xl:max-w-[844px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
+          <p className="hidden-ani-from-bot text-center text-[16px] leading-[24px] text-black 2xl:max-w-[844px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
             {FEATURE_GAMES.description}
           </p>
         </div>
         <Slider
           {...settings}
-          className="mx-[-19px] bg-[#333] p-[19px] 2xl:mx-[unset] 2xl:p-[12px]"
+          className="hidden-ani-from-bot mx-[-19px] bg-[#333] p-[19px] 2xl:mx-[unset] 2xl:p-[12px]"
         >
           {FEATURE_GAMES.games.map(game => {
             return (

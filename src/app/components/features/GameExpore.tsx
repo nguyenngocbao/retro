@@ -17,6 +17,8 @@ interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
   bossToBeat: number;
   buttonName: string;
   buttonLink?: string;
+  childrenClassName1?: string;
+  childrenClassName2?: string;
 }
 
 export const GameExpore: FC<GameExporeProps> = ({
@@ -30,6 +32,8 @@ export const GameExpore: FC<GameExporeProps> = ({
   bossToBeat,
   buttonName,
   buttonLink,
+  childrenClassName1,
+  childrenClassName2,
   ...props
 }) => {
   return (
@@ -43,12 +47,15 @@ export const GameExpore: FC<GameExporeProps> = ({
       <Image
         unoptimized
         alt={imageAlt}
-        className="mx-auto h-[320px] w-[320px] object-contain xl:w-[418px] 2xl:h-[517px] 2xl:w-[517px]"
+        className={mergeClasses(
+          'mx-auto h-[320px] w-[320px] object-contain xl:w-[418px] 2xl:h-[517px] 2xl:w-[517px]',
+          childrenClassName1
+        )}
         src={imagePath}
         width={517}
         height={517}
       />
-      <div>
+      <div className={mergeClasses('', childrenClassName2)}>
         <div className="mb-[16px] flex h-[41px] w-max items-center justify-center gap-[10px] bg-secondary px-[10px] text-[20px] font-bold leading-[28px] text-black 2xl:mb-[26px] 2xl:h-[74px] 2xl:gap-[27px] 2xl:pl-[19px] 2xl:pr-[28px]">
           <Icon className="h-[19px] w-[19px] 2xl:h-[58px] 2xl:w-[58px]" />
           <span className="uppercase 2xl:text-[36px] 2xl:leading-[50px]">
@@ -79,9 +86,9 @@ export const GameExpore: FC<GameExporeProps> = ({
         <Link href={buttonLink}>
           <Button
             variant="secondary"
-            className="relative mb-[30px] ml-[32px] h-[36px] w-[140px] md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
+            className="group relative mb-[30px] ml-[32px] h-[36px] w-[140px] hover:shadow-gr md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
           >
-            <FourLeafsIcon className="absolute left-0 translate-x-[-69%] 2xl:h-[76px] 2xl:w-[76px]" />
+            <FourLeafsIcon className="absolute left-0 translate-x-[-69%] transition-all group-hover:rotate-90 2xl:h-[76px] 2xl:w-[76px]" />
             {buttonName}
           </Button>
         </Link>

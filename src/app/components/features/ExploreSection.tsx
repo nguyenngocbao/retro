@@ -22,10 +22,10 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
         {...props}
       >
         <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
-          <h2 className="mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black 2xl:mb-[29px] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
+          <h2 className="hidden-ani-from-bot mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black 2xl:mb-[29px] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
             EXPLORE THE GAME
           </h2>
-          <p className="mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[118px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
+          <p className="hidden-ani-from-bot mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[118px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
             Explore the ultimate nostalgic gaming metaverse! Quest through
             reimagined retro classics, craft vivid voxel worlds, trade rare NFTs
             and earn $Retro tokens as you play!
@@ -40,12 +40,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonLink={GAME_EXPORES.SUPPER_MARIO_BROS_2.buttonLink}
             levelToPlay={GAME_EXPORES.SUPPER_MARIO_BROS_2.levelToPlay}
             bossToBeat={GAME_EXPORES.SUPPER_MARIO_BROS_2.bossToBeat}
+            childrenClassName1="hidden-ani-from-left"
+            childrenClassName2="hidden-ani-from-right"
           />
         </div>
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center  gap-[27px] bg-game2-bg  bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 2xl:py-[139px]',
+          'ani-scale-bg flex flex-col items-center justify-center  gap-[27px] bg-game2-bg  bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 2xl:py-[139px]',
           className
         )}
         {...props}
@@ -62,12 +64,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonLink={GAME_EXPORES.OUT_RUN.buttonLink}
             levelToPlay={GAME_EXPORES.OUT_RUN.levelToPlay}
             bossToBeat={GAME_EXPORES.OUT_RUN.bossToBeat}
+            childrenClassName2="hidden-ani-from-left"
+            childrenClassName1="hidden-ani-from-right"
           />
         </div>
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:py-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:py-[139px]',
           className
         )}
         {...props}
@@ -83,12 +87,14 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonLink={GAME_EXPORES.DONKEY_KONG.buttonLink}
             levelToPlay={GAME_EXPORES.DONKEY_KONG.levelToPlay}
             bossToBeat={GAME_EXPORES.DONKEY_KONG.bossToBeat}
+            childrenClassName1="hidden-ani-from-left"
+            childrenClassName2="hidden-ani-from-right"
           />
         </div>
       </section>
       <section
         className={mergeClasses(
-          'flex  flex-col items-center justify-center  gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game4-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game4-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
           className
         )}
         {...props}
@@ -105,6 +111,8 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             buttonLink={GAME_EXPORES.OUT_RUN_VER_2.buttonLink}
             levelToPlay={GAME_EXPORES.OUT_RUN_VER_2.levelToPlay}
             bossToBeat={GAME_EXPORES.OUT_RUN_VER_2.bossToBeat}
+            childrenClassName2="hidden-ani-from-left"
+            childrenClassName1="hidden-ani-from-right"
           />
         </div>
       </section>

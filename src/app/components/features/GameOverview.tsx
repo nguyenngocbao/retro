@@ -15,7 +15,7 @@ export const GameOverview: FC<HTMLAttributes<HTMLElement>> = ({
     <section
       id="game-overview"
       className={mergeClasses(
-        'relative mx-auto max-w-[calc(100%_-_38px)] pb-[32px] md:max-w-[calc(100%_-_110px)] lg:mx-auto lg:flex lg:max-w-[calc(100%_-_300px)] lg:flex-row lg:gap-[30px]  lg:pb-[100px] lg:pt-[30px] 2xl:max-w-[1227px] 2xl:gap-[65px] 2xl:p-0 2xl:pb-[211px] 2xl:pt-[unset]',
+        'hidden-ani-from-bot relative mx-auto max-w-[calc(100%_-_38px)] pb-[32px] md:max-w-[calc(100%_-_110px)] lg:mx-auto lg:flex lg:max-w-[calc(100%_-_300px)] lg:flex-row lg:gap-[30px]  lg:pb-[100px] lg:pt-[30px] 2xl:max-w-[1227px] 2xl:gap-[65px] 2xl:p-0 2xl:pb-[211px] 2xl:pt-[unset]',
         className
       )}
       {...props}
