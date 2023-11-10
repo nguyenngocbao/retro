@@ -1,10 +1,10 @@
-import Link from 'next/link';
+//import Link from 'next/link';
 import { FC, HTMLAttributes } from 'react';
 
-import { FourLeafsIcon } from '@/app/assets/icons/FourLeafs';
+//import { FourLeafsIcon } from '@/app/assets/icons/FourLeafs';
 import { mergeClasses } from '@/app/utils';
 
-import { Button } from '../buttons/Button';
+//import { Button } from '../buttons/Button';
 import { Image } from '../images/Image';
 
 interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
@@ -30,8 +30,8 @@ export const GameExpore: FC<GameExporeProps> = ({
   desc,
   levelToPlay,
   levelToPlayContent,
-  buttonName,
-  buttonLink,
+  //buttonName,
+  //buttonLink,
   childrenClassName1,
   childrenClassName2,
   ...props
