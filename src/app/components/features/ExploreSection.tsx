@@ -26,9 +26,9 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             EXPLORE THE GAME
           </h2>
           <p className="hidden-ani-from-bot mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[118px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
-            Explore the ultimate nostalgic gaming metaverse! Quest through
-            reimagined retro classics, craft vivid voxel worlds, trade rare NFTs
-            and earn $Retro tokens as you play!
+            Gear up for a nostalgic battle! Remix classics, conquer epic worlds,
+            trade NFTs, and skillfully earn $Retro tokens. It's not just gaming;
+            it's a thrilling fight to level up. Ready to dominate? 🚀🎮⚔️
           </p>
           <GameExpore
             className="md:flex-row-reverse"

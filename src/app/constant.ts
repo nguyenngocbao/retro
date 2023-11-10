@@ -123,31 +123,31 @@ export const GAME_EXPORES = {
     icon: SwordIcon,
     image: '/game-cd2.png',
     description:
-      'Experience 90s tank warfare meets Minecraft battles! Destroy enemies, earn money, and dominate the battlefield for thrilling rewards!',
-    levelToPlay: 5,
-    levelToPlayContent: 'Mode to battle',
+      "Battle through 90s tank warfare fused with Minecraft chaos! Fight, conquer, and skill your way to epic rewards. It's not just a game; it's a relentless quest for domination and glory! 🚀⚔️💎",
+    levelToPlay: 'Battle',
+    levelToPlayContent: 'To Earn',
     buttonLink: '',
-    buttonName: 'BATTlE TO EARN'
+    buttonName: 'Battle to Earn'
   },
   DONKEY_KONG: {
     name: 'CAR RACING',
     icon: CrossbowIcon,
     image: '/game-cd1.png',
     description:
-      'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
-    levelToPlay: 70,
-    levelToPlayContent: 'Level to race',
+      "Race to earn in RetroCraft! Customize, compete, and conquer on pixel-art tracks. It's not just a race; it's a competitive thrill with rewards at every turn! 🏁🚗💨💰",
+    levelToPlay: 'RACE',
+    levelToPlayContent: 'To Earn',
     buttonLink: '',
     buttonName: 'RACE TO EARN'
   },
   OUT_RUN_VER_2: {
-    name: 'MARIO CART',
+    name: 'Skillful Survivor',
     icon: SwordIcon,
     image: '/game-cd3.png',
     description:
-      'Experience nostalgic pixel-art arcade racing in RetroCraft - customize vintage vehicles and compete against friends on retro-styled tracks.',
-    levelToPlay: 20,
-    levelToPlayContent: 'Level to play',
+      'Survive Pac-Man mazes, showcase skills, and stack $Retro tokens! Outlast challenges, level up — become the ultimate survivor! 🚀🕹',
+    levelToPlay: 'SKILL',
+    levelToPlayContent: 'To Earn',
     buttonLink: '',
     buttonName: 'SKILL TO EARN'
   }
@@ -155,9 +155,7 @@ export const GAME_EXPORES = {
 
 export const GAME_OVERVIEW = {
   title: 'THE NEW BEGINNING',
-  description: `RetroCraft is a unique nostalgic blockchain game developed by veteran indie studios,
-   recreating iconic retro titles like Super Mario, Car Racing and Tank War in pixel-perfect detail.
-  Players can quest through faithfully remastered classics, craft voxel worlds, compete in battles and minigames to earn $Retro tokens. The game also features survival mode, rare NFT trading marketplace, and overall aims to deliver the ultimate retro gaming experience coupled with real play-to-earn rewards.`
+  description: `Immerse yourself in the ultimate retro 90s gaming showdown with RetroCraft! Battle with friends or dive into free-for-all chaos, conquering tank battles, racing, and showcasing skills for legendary $Retro tokens. Relive the magic of classic 90s games, crush challenges, and embark on a pulse-pounding journey to retro glory! 🚀🎮💰`
 };
 
 export const FEATURE_GAMES = {

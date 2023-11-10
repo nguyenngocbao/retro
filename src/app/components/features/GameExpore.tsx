@@ -13,7 +13,7 @@ interface GameExporeProps extends HTMLAttributes<HTMLDivElement> {
   titleIcon: any;
   name: string;
   desc: string;
-  levelToPlay: number;
+  levelToPlay: string;
   levelToPlayContent: string;
   buttonName: string;
   buttonLink?: string;
