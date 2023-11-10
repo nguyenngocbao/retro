@@ -83,7 +83,7 @@ export const GameExpore: FC<GameExporeProps> = ({
             </p>
           </div> */}
         </div>
-        <Link href={buttonLink}>
+        {/* <Link href={buttonLink}>
           <Button
             variant="secondary"
             className="group relative mb-[30px] ml-[32px] h-[36px] w-[140px] hover:shadow-gr md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
@@ -91,7 +91,7 @@ export const GameExpore: FC<GameExporeProps> = ({
             <FourLeafsIcon className="absolute left-0 translate-x-[-69%] transition-all group-hover:rotate-90 2xl:h-[76px] 2xl:w-[76px]" />
             {buttonName}
           </Button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
