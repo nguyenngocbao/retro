@@ -200,7 +200,7 @@ main {
   }
 }
 
-#welcome-section {
+.delay-1s {
   animation: show 0.5s both 1.5s;
 }
 

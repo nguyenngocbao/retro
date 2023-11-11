@@ -123,7 +123,7 @@ export const GAME_EXPORES = {
     icon: SwordIcon,
     image: '/game-cd1.png',
     description:
-      "Battle through 90s tank warfare fused with Minecraft chaos! Fight, conquer, and skill your way to epic rewards. It's not just a game; it's a relentless quest for domination and glory! 🚀⚔️💎",
+      "Battle through 90s tank warfare fused with Minecraft chaos! Fight, conquer, and skill your way to epic rewards. It's not just a game; it's a relentless quest for domination and glory!",
     levelToPlay: 'Battle',
     levelToPlayContent: 'To Earn',
     buttonLink: '',
@@ -134,7 +134,7 @@ export const GAME_EXPORES = {
     icon: CrossbowIcon,
     image: '/game-cd2.png',
     description:
-      "Race to earn in RetroCraft! Customize, compete, and conquer on pixel-art tracks. It's not just a race; it's a competitive thrill with rewards at every turn! 🏁🚗💨💰",
+      "Race to earn in RetroCraft! Customize, compete, and conquer on pixel-art tracks. It's not just a race; it's a competitive thrill with rewards at every turn!",
     levelToPlay: 'RACE',
     levelToPlayContent: 'To Earn',
     buttonLink: '',
@@ -145,7 +145,7 @@ export const GAME_EXPORES = {
     icon: SwordIcon,
     image: '/game-cd3.png',
     description:
-      'Survive Pac-Man mazes, showcase skills, and stack $Retro tokens! Outlast challenges, level up — become the ultimate survivor! 🚀🕹',
+      'Survive Pac-Man mazes, showcase skills, and stack $Retro tokens! Outlast challenges, level up — become the ultimate survivor!',
     levelToPlay: 'SKILL',
     levelToPlayContent: 'To Earn',
     buttonLink: '',
@@ -155,7 +155,7 @@ export const GAME_EXPORES = {
 
 export const GAME_OVERVIEW = {
   title: 'THE NEW BEGINNING',
-  description: `Immerse yourself in the ultimate retro 90s gaming showdown with RetroCraft! Battle with friends or dive into free-for-all chaos, conquering tank battles, racing, and showcasing skills for legendary $Retro tokens. Relive the magic of classic 90s games, crush challenges, and embark on a pulse-pounding journey to retro glory! 🚀🎮💰`
+  description: `Immerse yourself in the ultimate retro 90s gaming showdown with RetroCraft! Battle with friends or dive into free-for-all chaos, conquering tank battles, racing, and showcasing skills for legendary $Retro tokens. Relive the magic of classic 90s games, crush challenges, and embark on a pulse-pounding journey to retro glory!`
 };
 
 export const FEATURE_GAMES = {
@@ -163,29 +163,29 @@ export const FEATURE_GAMES = {
   description: `Reimagined pixel-perfect classics. Faithfully remastered arcade favorites with smooth modern controls. Supercharged blockchain versions of iconic retro hits - now with new challenges to master and rewards to earn.`,
   games: [
     {
-      image: '/supper-mario-bros-2-bg.png',
-      name: 'Skillful Survivor',
+      image: '/skillfull-survivor-bg.png',
+      name: 'SKILLFUL SURVIVOR',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
-      image: '/out-run-bg.png',
+      image: '/car-racing-bg.png',
       name: 'CAR RACING',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
-      image: '/donkey-kong-bg.png',
+      image: '/tank-war-bg.png',
       name: 'TANK WAR',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
-      image: '/supper-mario-bros-v2-bg.png',
-      name: 'CAR RACING VER 2.0',
+      image: '/supper-mario-bros-bg.png',
+      name: 'SUPPER MARIO BROS',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'

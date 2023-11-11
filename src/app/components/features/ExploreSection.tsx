@@ -29,7 +29,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             Gear up for a nostalgic battle! Remix classics, conquer epic worlds,
             trade NFTs, and skillfully earn $Retro tokens. It&apos;s not just
             gaming; it&apos;s a thrilling fight to level up. Ready to dominate?
-            🚀🎮⚔️
+            🚀
           </p>
           <GameExpore
             className="md:flex-row-reverse"

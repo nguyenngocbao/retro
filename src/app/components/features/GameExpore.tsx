@@ -66,11 +66,11 @@ export const GameExpore: FC<GameExporeProps> = ({
           {desc}
         </p>
         <div className="mb-[19px] flex max-w-[334px] justify-between gap-[34px] 2xl:mb-[28px]">
-          <div className="flex items-center gap-[7px]">
+          <div className="flex items-center gap-[10px]">
             <p className="text-[48px] font-bold leading-[48px] 2xl:text-[72px] 2xl:leading-[72px]">
               {levelToPlay}
             </p>
-            <p className="w-[61px] text-[16px] leading-[24px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
+            <p className="w-[61px] text-[20px] leading-[20px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
               {levelToPlayContent}
             </p>
           </div>
