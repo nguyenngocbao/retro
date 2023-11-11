@@ -55,13 +55,6 @@ module.exports = {
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
         }/game3-bg-pc.png')`,
 
-        'game4-bg': `url('${
-          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/game4-bg.png')`,
-        'game4-bg-pc': `url('${
-          process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/game4-bg-pc.png')`,
-
         'join-the-world': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
         }/join-the-world-bg.png')`,

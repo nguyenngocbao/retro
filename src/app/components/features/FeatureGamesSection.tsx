@@ -92,7 +92,7 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
                     height={413}
                   />
                   <div className="absolute bottom-0 left-0 z-[-1] h-[138px] w-full bg-[linear-gradient(180deg,_rgba(38,_38,_38,_0.00)_0%,_rgba(38,_38,_38,_0.61)_47.92%,_#262626_100%)]"></div>
-                  <p className="mb-[6px] text-[20px] leading-[28px] text-white">
+                  <p className="mb-[6px] text-[20px] uppercase leading-[28px] text-white">
                     {game.name}
                   </p>
                   <Link href={game.learnMore}>

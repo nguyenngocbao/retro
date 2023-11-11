@@ -118,10 +118,10 @@ export const WELCOME_BANNER = {
 };
 
 export const GAME_EXPORES = {
-  OUT_RUN: {
+  TANK_WAR: {
     name: 'TANK WAR',
     icon: SwordIcon,
-    image: '/game-cd2.png',
+    image: '/game-cd1.png',
     description:
       "Battle through 90s tank warfare fused with Minecraft chaos! Fight, conquer, and skill your way to epic rewards. It's not just a game; it's a relentless quest for domination and glory! 🚀⚔️💎",
     levelToPlay: 'Battle',
@@ -129,10 +129,10 @@ export const GAME_EXPORES = {
     buttonLink: '',
     buttonName: 'Battle to Earn'
   },
-  DONKEY_KONG: {
+  CAR_RACING: {
     name: 'CAR RACING',
     icon: CrossbowIcon,
-    image: '/game-cd1.png',
+    image: '/game-cd2.png',
     description:
       "Race to earn in RetroCraft! Customize, compete, and conquer on pixel-art tracks. It's not just a race; it's a competitive thrill with rewards at every turn! 🏁🚗💨💰",
     levelToPlay: 'RACE',
@@ -140,8 +140,8 @@ export const GAME_EXPORES = {
     buttonLink: '',
     buttonName: 'RACE TO EARN'
   },
-  OUT_RUN_VER_2: {
-    name: 'Skillful Survivor',
+  SKILLFUL_SURVIVOR: {
+    name: 'SKILLFUL SURVIVOR',
     icon: SwordIcon,
     image: '/game-cd3.png',
     description:

@@ -10,7 +10,7 @@ export const Logo = () => {
   useEffect(() => {
     setTimeout(() => {
       ref.current.style.display = 'none';
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (

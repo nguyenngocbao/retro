@@ -23,7 +23,7 @@ export const GameOverview: FC<HTMLAttributes<HTMLElement>> = ({
       <Image
         unoptimized
         alt="story of mario"
-        className="absolute right-0 top-[-102px] md:left-0 md:top-[-50px] md:w-[50vw] lg:top-[-20px] lg:w-[340px] 2xl:top-[-150px] 2xl:w-[589px]"
+        className="absolute right-0 top-[-35px] md:left-0 md:top-0 md:w-[50vw] lg:top-[-20px] lg:w-[340px] 2xl:w-[589px]"
         src="/game-overview.png"
         lgSrc="/game-overview-pc.png"
         width={343}

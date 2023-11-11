@@ -33,15 +33,17 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
           </p>
           <GameExpore
             className="md:flex-row-reverse"
-            imagePath={GAME_EXPORES.OUT_RUN.image}
-            imageAlt={GAME_EXPORES.OUT_RUN.description}
-            titleIcon={GAME_EXPORES.OUT_RUN.icon}
-            name={GAME_EXPORES.OUT_RUN.name}
-            desc={GAME_EXPORES.OUT_RUN.description}
-            buttonName={GAME_EXPORES.OUT_RUN.buttonName}
-            buttonLink={GAME_EXPORES.OUT_RUN.buttonLink}
-            levelToPlay={GAME_EXPORES.OUT_RUN.levelToPlay}
-            levelToPlayContent={GAME_EXPORES.OUT_RUN.levelToPlayContent}
+            imagePath={GAME_EXPORES.SKILLFUL_SURVIVOR.image}
+            imageAlt={GAME_EXPORES.SKILLFUL_SURVIVOR.description}
+            titleIcon={GAME_EXPORES.SKILLFUL_SURVIVOR.icon}
+            name={GAME_EXPORES.SKILLFUL_SURVIVOR.name}
+            desc={GAME_EXPORES.SKILLFUL_SURVIVOR.description}
+            buttonName={GAME_EXPORES.SKILLFUL_SURVIVOR.buttonName}
+            buttonLink={GAME_EXPORES.SKILLFUL_SURVIVOR.buttonLink}
+            levelToPlay={GAME_EXPORES.SKILLFUL_SURVIVOR.levelToPlay}
+            levelToPlayContent={
+              GAME_EXPORES.SKILLFUL_SURVIVOR.levelToPlayContent
+            }
             childrenClassName2="hidden-ani-from-left"
             childrenClassName1="hidden-ani-from-right"
           />
@@ -49,22 +51,22 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:py-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game2-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game2-bg-pc lg:px-0 2xl:py-[139px]',
           className
         )}
         {...props}
       >
         <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
-            imagePath={GAME_EXPORES.DONKEY_KONG.image}
-            imageAlt={GAME_EXPORES.DONKEY_KONG.description}
-            titleIcon={GAME_EXPORES.DONKEY_KONG.icon}
-            name={GAME_EXPORES.DONKEY_KONG.name}
-            desc={GAME_EXPORES.DONKEY_KONG.description}
-            buttonName={GAME_EXPORES.DONKEY_KONG.buttonName}
-            buttonLink={GAME_EXPORES.DONKEY_KONG.buttonLink}
-            levelToPlay={GAME_EXPORES.DONKEY_KONG.levelToPlay}
-            levelToPlayContent={GAME_EXPORES.DONKEY_KONG.levelToPlayContent}
+            imagePath={GAME_EXPORES.TANK_WAR.image}
+            imageAlt={GAME_EXPORES.TANK_WAR.description}
+            titleIcon={GAME_EXPORES.TANK_WAR.icon}
+            name={GAME_EXPORES.TANK_WAR.name}
+            desc={GAME_EXPORES.TANK_WAR.description}
+            buttonName={GAME_EXPORES.TANK_WAR.buttonName}
+            buttonLink={GAME_EXPORES.TANK_WAR.buttonLink}
+            levelToPlay={GAME_EXPORES.TANK_WAR.levelToPlay}
+            levelToPlayContent={GAME_EXPORES.TANK_WAR.levelToPlayContent}
             childrenClassName1="hidden-ani-from-left"
             childrenClassName2="hidden-ani-from-right"
           />
@@ -72,7 +74,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center  gap-[27px] bg-game4-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game4-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
           className
         )}
         {...props}
@@ -80,15 +82,15 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
         <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
           <GameExpore
             className="md:flex-row-reverse"
-            imagePath={GAME_EXPORES.OUT_RUN_VER_2.image}
-            imageAlt={GAME_EXPORES.OUT_RUN_VER_2.description}
-            titleIcon={GAME_EXPORES.OUT_RUN_VER_2.icon}
-            name={GAME_EXPORES.OUT_RUN_VER_2.name}
-            desc={GAME_EXPORES.OUT_RUN_VER_2.description}
-            buttonName={GAME_EXPORES.OUT_RUN_VER_2.buttonName}
-            buttonLink={GAME_EXPORES.OUT_RUN_VER_2.buttonLink}
-            levelToPlay={GAME_EXPORES.OUT_RUN_VER_2.levelToPlay}
-            levelToPlayContent={GAME_EXPORES.OUT_RUN_VER_2.levelToPlayContent}
+            imagePath={GAME_EXPORES.CAR_RACING.image}
+            imageAlt={GAME_EXPORES.CAR_RACING.description}
+            titleIcon={GAME_EXPORES.CAR_RACING.icon}
+            name={GAME_EXPORES.CAR_RACING.name}
+            desc={GAME_EXPORES.CAR_RACING.description}
+            buttonName={GAME_EXPORES.CAR_RACING.buttonName}
+            buttonLink={GAME_EXPORES.CAR_RACING.buttonLink}
+            levelToPlay={GAME_EXPORES.CAR_RACING.levelToPlay}
+            levelToPlayContent={GAME_EXPORES.CAR_RACING.levelToPlayContent}
             childrenClassName2="hidden-ani-from-left"
             childrenClassName1="hidden-ani-from-right"
           />

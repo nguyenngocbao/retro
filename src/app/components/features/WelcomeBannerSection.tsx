@@ -55,8 +55,9 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
 
   return (
     <section
+      id="welcome-section"
       className={mergeClasses(
-        `hidden-ani relative lg:flex lg:flex-col lg:justify-between`,
+        `relative lg:flex lg:flex-col lg:justify-between`,
         className
       )}
       {...props}
@@ -77,7 +78,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           </h1>
           <RetrocraftIcon className="mb-[23px] h-[117px] w-[246px] 2xl:mb-[32px] 2xl:h-[205px] 2xl:w-[429px]" />
           <p className="mb-[29px] text-[16px] font-bold leading-[22px] lg:uppercase 2xl:mb-[24px] 2xl:text-[20px] 2xl:leading-[28px]">
-            the ultimate retro gaming experience. Relive classics and earn for
+            The ultimate retro gaming experience. Relive classics and earn for
             real in RetroCraft.
           </p>
           <Link href="https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft">
@@ -110,7 +111,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
                   <Image
                     unoptimized
                     alt={game.description}
-                    className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] object-scale-down md:h-full md:overflow-visible md:object-contain lg:h-full lg:object-top"
+                    className="absolute left-[50%] top-[50%] h-full w-full translate-x-[-50%] translate-y-[-50%] object-scale-down md:h-full md:overflow-visible md:object-contain lg:h-full lg:object-top"
                     src={game.image}
                     width={346}
                     height={280}
