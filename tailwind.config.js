@@ -60,7 +60,7 @@ module.exports = {
         }/join-the-world-bg.png')`,
         'join-the-world-pc': `url('${
           process.env.NEXT_PUBLIC_ROOT_PATH ?? ''
-        }/join-the-world-bg-pc.png')`
+        }/join-the-world-bg-pc.jpg')`
       },
       boxShadow: {
         gr: '3px 3px #1dc241'

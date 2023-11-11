@@ -70,7 +70,7 @@ export const GameExpore: FC<GameExporeProps> = ({
             <p className="text-[48px] font-bold leading-[48px] 2xl:text-[72px] 2xl:leading-[72px]">
               {levelToPlay}
             </p>
-            <p className="w-[61px] text-[20px] leading-[20px] 2xl:w-[78px] 2xl:text-[20px] 2xl:leading-[28px]">
+            <p className="w-[61px] text-[20px] leading-[20px] 2xl:w-[78px] 2xl:text-[28px] 2xl:leading-[30px]">
               {levelToPlayContent}
             </p>
           </div>
