@@ -21,9 +21,8 @@ export const HEADER_MENU_OPTIONS: Option[] = [
   },
   {
     label: 'BUY $RETRO',
-    value:
-      'https://whitepaper.retrocraft.io/retrocaft-tokenomics/token-information',
-    blank: true
+    value: '',
+    blank: false
   }
 ];
 
@@ -33,8 +32,9 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
     value: '',
     children: [
       {
-        label: 'Games',
-        value: '/#game-expore'
+        label: 'How to Play',
+        value:
+          'https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft'
       },
       {
         label: 'Whitepaper',
@@ -194,7 +194,7 @@ export const FEATURE_GAMES = {
 };
 
 export const JOIN_THE_WORLD = {
-  title: 'JOIN THE WOLRD OF RETROCRAFT',
+  title: 'JOIN THE WORLD OF RETROCRAFT',
   description: `Step into the ultimate retro gaming. 
   Play through reimagined classics, battle to win, craft unique worlds, trade NFTs and earn as you game.`,
   joinNowLink:

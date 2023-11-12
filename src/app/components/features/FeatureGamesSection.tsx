@@ -100,7 +100,7 @@ export const FeatureGamesSections: FC<HTMLAttributes<HTMLElement>> = ({
                       variant="secondary"
                       className="mb-[15px] h-[38px] w-[157px]"
                     >
-                      LEARN MORE
+                      COMING SOON
                     </Button>
                   </Link>
                 </div>
