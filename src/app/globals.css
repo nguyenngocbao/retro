@@ -200,8 +200,23 @@ main {
   }
 }
 
-.delay-1s {
+@keyframes no-scroll {
+  from {
+    height: 100vh;
+    overflow: hidden;
+  }
+  to {
+    height: unset;
+    overflow: unset;
+  }
+}
+
+.delay-2s {
   animation: show 0.5s both 1.5s;
+}
+
+.no-scroll-2s {
+  animation: no-scroll 0.5s both 1.5s;
 }
 
 .logo-loading {

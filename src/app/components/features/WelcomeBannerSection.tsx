@@ -56,7 +56,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `delay-1s relative lg:flex lg:flex-col lg:justify-between`,
+        `relative lg:flex lg:flex-col lg:justify-between`,
         className
       )}
       {...props}

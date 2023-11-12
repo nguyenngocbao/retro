@@ -14,7 +14,7 @@ export const Footer = () => {
   const ContactUsElement: any = CONTACT_US.value ? 'Link' : 'span';
 
   return (
-    <footer>
+    <footer className="delay-2s">
       <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:max-w-[calc(100%_-_72px)] lg:flex-row lg:justify-between lg:pb-[59px] lg:pt-0 2xl:max-w-[1227px]">
         <Link href="/">
           <Image

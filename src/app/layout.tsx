@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         suppressHydrationWarning={true}
-        className={font.className + ' bg-black'}
+        className={font.className + ' no-scroll-2s bg-black'}
       >
         <Logo />
         <Header />

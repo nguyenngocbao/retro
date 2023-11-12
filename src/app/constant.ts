@@ -132,7 +132,7 @@ export const GAME_EXPORES = {
   CAR_RACING: {
     name: 'CAR RACING',
     icon: CrossbowIcon,
-    image: '/game-cd2.png',
+    image: '/game-cd2.webp',
     description:
       "Race to earn in RetroCraft! Customize, compete, and conquer on pixel-art tracks. It's not just a race; it's a competitive thrill with rewards at every turn!",
     levelToPlay: 'RACE',
@@ -170,7 +170,7 @@ export const FEATURE_GAMES = {
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
     },
     {
-      image: '/car-racing-bg.png',
+      image: '/car-racing-bg.webp',
       name: 'CAR RACING',
       shortDesc: 'desc',
       learnMore:
