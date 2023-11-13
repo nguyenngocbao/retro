@@ -33,7 +33,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
           </p>
           <iframe
             width="100%"
-            src="https://www.youtube.com/embed/XQ3RRopQxrc?si=LsQJ5N-QT9bpSB2n"
+            src="https://www.youtube.com/embed/XQ3RRopQxrc?si=LsQJ5N-QT9bpSB2n&start=1&rel=0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
