@@ -3,10 +3,13 @@
 import Link from 'next/link';
 import { FC, HTMLAttributes, useRef, useState } from 'react';
 
-import { FourLeafsIcon } from '@/app/assets/icons/FourLeafs';
+import { Android } from '@/app/assets/icons/Android';
+import { CommingSoon } from '@/app/assets/icons/CommingSoon';
+import { IOS } from '@/app/assets/icons/IOS';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
 import { RetrocraftIcon } from '@/app/assets/icons/Retrocraft';
 import { RightArrowIcon } from '@/app/assets/icons/RightArrow';
+import { Window } from '@/app/assets/icons/Window';
 import { WELCOME_BANNER } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
@@ -56,7 +59,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
   return (
     <section
       className={mergeClasses(
-        `relative lg:flex lg:flex-col lg:justify-between`,
+        `relative lg:flex lg:flex-col lg:justify-between 2xl:gap-[20px]`,
         className
       )}
       {...props}
@@ -76,19 +79,41 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
             WELCOME TO
           </h1>
           <RetrocraftIcon className="mb-[23px] h-[117px] w-[246px] 2xl:mb-[32px] 2xl:h-[205px] 2xl:w-[429px]" />
-          <p className="mb-[29px] text-[16px] font-bold leading-[22px] lg:uppercase 2xl:mb-[24px] 2xl:text-[20px] 2xl:leading-[28px]">
+          <p className="mb-[14px] text-[16px] font-bold leading-[22px] lg:uppercase 2xl:mb-[24px] 2xl:text-[20px] 2xl:leading-[28px]">
             The ultimate retro gaming experience. Relive classics and earn for
             real in RetroCraft.
           </p>
-          <Link href="https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft">
+          <div className="mb-[13px] 2xl:mb-[21px]">
+            <Link href="https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft">
+              <Button
+                variant="secondary"
+                className="h-[45px] w-[169px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[247px] 2xl:text-[32px] 2xl:leading-[48px]"
+              >
+                <Window className="2xl:h-[39px] 2xl:w-[39px]" />
+                <span>PC</span>
+              </Button>
+            </Link>
+          </div>
+          <div className="mb-[13px] flex gap-[13px] 2xl:gap-[19px]">
             <Button
               variant="secondary"
-              className="group relative mb-[30px] ml-[32px] h-[36px] w-[140px] hover:shadow-gr md:mb-[unset] 2xl:ml-[47px] 2xl:h-[55px] 2xl:w-[241px] 2xl:text-[32px] 2xl:font-[500] 2xl:leading-[44px]"
+              disabled
+              className="relative h-[45px] w-[169px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[247px] 2xl:text-[32px] 2xl:leading-[48px]"
             >
-              <FourLeafsIcon className="absolute left-0 translate-x-[-69%] transition-all group-hover:rotate-90 2xl:h-[76px] 2xl:w-[76px]" />
-              PLAY NOW
+              <Android className="2xl:h-[39px] 2xl:w-[33px]" />
+              <span>ANDROID</span>
+              <CommingSoon className="absolute right-[-1px] top-[-1px] 2xl:h-[62px] 2xl:w-[62px]" />
             </Button>
-          </Link>
+            <Button
+              variant="secondary"
+              disabled
+              className="relative h-[45px] w-[169px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[247px] 2xl:text-[32px] 2xl:leading-[48px]"
+            >
+              <IOS className="2xl:h-[39px] 2xl:w-[33px]" />
+              <span>IOS</span>
+              <CommingSoon className="absolute right-[-1px] top-[-1px] 2xl:h-[62px] 2xl:w-[62px]" />
+            </Button>
+          </div>
         </div>
         <div
           className="md:mx-[50px] lg:relative lg:mx-[unset] lg:min-h-[391px] lg:max-w-[calc(100vw_-_562px)] lg:flex-[1] xl:max-w-[calc(calc(100vw_-_445px)_-_calc(100vw_-_calc(100vw_-_300px)))] 2xl:min-h-[530px] 2xl:max-w-[calc(calc(100vw_-_626px)_-_calc(100vw_-_1227px))]"

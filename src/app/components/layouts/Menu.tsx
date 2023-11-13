@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { FC, HTMLAttributes, useState } from 'react';
 
 import { CloseIcon } from '@/app/assets/icons/Close';
+import { CommingSoon } from '@/app/assets/icons/CommingSoon';
 import { MenuArrowDownIcon } from '@/app/assets/icons/MenuArrowDown';
 import { HEADER_MENU_OPTIONS } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
@@ -125,20 +126,21 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
 
         <li
           className={mergeClasses(
-            'group mt-[12px] h-[52px] bg-secondary text-black transition-all hover:scale-x-105 hover:scale-y-110 hover:shadow-gr lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
+            'group relative mt-[12px] h-[52px] bg-secondary text-black transition-all hover:scale-x-105 hover:scale-y-110 hover:shadow-gr lg:ml-[12px] lg:mt-[unset] lg:h-full lg:w-[196px]',
             isActive(CONNECT_OPTION.value) && 'text-primary3'
           )}
         >
-          <Link
+          <div
             className="flex h-full w-full items-center justify-center"
-            href={String(CONNECT_OPTION.value)}
+            // href={String(CONNECT_OPTION.value)}
           >
             <span>BUY</span>
             <span className="ml-[4px] mr-[2px] transition-all group-hover:text-gr group-hover:flip-y-360 group-hover:text-shadow">
               $
             </span>
             <span>RETRO</span>
-          </Link>
+            <CommingSoon className="absolute right-[-1px] top-[-1px] 2xl:right-[-2px] 2xl:top-[-2px] 2xl:h-[62px] 2xl:w-[62px]" />
+          </div>
         </li>
       </ul>
     </section>

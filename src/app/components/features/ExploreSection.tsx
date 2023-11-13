@@ -16,7 +16,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       <section
         id="game-expore"
         className={mergeClasses(
-          'bg-game1-bg bg-cover bg-bottom bg-no-repeat pb-[82px] pt-[23px] md:py-[50px] lg:bg-game1-bg-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
+          'bg-game1-bg bg-cover  bg-bottom bg-no-repeat pb-[82px] pt-[23px] md:py-[50px] lg:bg-game1-bg-pc lg:px-0 lg:pb-[114px] lg:pt-[79px]',
           className
         )}
         {...props}
@@ -25,12 +25,22 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
           <h2 className="hidden-ani-from-bot mx-auto mb-[14px] flex h-[65px] w-[246px] items-center justify-center bg-bg-title-1 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black 2xl:mb-[29px] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
             EXPLORE THE GAME
           </h2>
-          <p className="hidden-ani-from-bot mb-[24px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[118px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
+          <p className="hidden-ani-from-bot mb-[43px] text-center text-[16px] font-bold leading-[22.4px] lg:mx-auto lg:max-w-[723px] 2xl:mb-[97px] 2xl:text-[20px] 2xl:uppercase 2xl:leading-[28px]">
             Gear up for a nostalgic battle! Remix classics, conquer epic worlds,
             trade NFTs, and skillfully earn $Retro tokens. It&apos;s not just
             gaming; it&apos;s a thrilling fight to level up. Ready to dominate?
             🚀
           </p>
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/-OD7DFPRbIc?si=KhyszyHomp4k5vzA"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="mx-auto mb-[82px] aspect-video w-full max-w-[844px] shadow-md 2xl:mb-[140px]"
+          ></iframe>
+
           <GameExpore
             className="md:flex-row-reverse"
             imagePath={GAME_EXPORES.SKILLFUL_SURVIVOR.image}
