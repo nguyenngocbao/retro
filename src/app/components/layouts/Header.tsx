@@ -41,10 +41,10 @@ export function Header() {
             <Link href="/">
               <Image
                 width={136}
-                className="h-[48px] w-[98px] lg:h-auto lg:w-[100px] 2xl:h-[66px] 2xl:w-[136px]"
+                className="h-[48px] w-[98px] lg:h-[66px] lg:w-[100px] 2xl:h-[78px] 2xl:w-[136px]"
                 height={66}
-                src="/retrocraft.svg"
-                alt="retro-game"
+                src="/logo_retrocraft.svg"
+                alt="retrocraft"
                 unoptimized
                 priority
               />

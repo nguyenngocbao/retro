@@ -15,14 +15,14 @@ export const Footer = () => {
 
   return (
     <footer className="delay-2s">
-      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:max-w-[calc(100%_-_72px)] lg:flex-row lg:justify-between lg:pb-[59px] lg:pt-0 2xl:max-w-[1227px]">
+      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:max-w-[calc(100%_-_72px)] lg:flex-row lg:justify-between lg:pb-[59px] lg:pt-0 xl:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
         <Link href="/">
           <Image
             width={136}
             height={66}
-            src="/retrocraft.svg"
+            src="/logo_retrocraft.svg"
             alt="retro-game"
-            className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%] lg:static lg:mt-[5px] lg:h-fit lg:w-[100px]  lg:translate-x-0 lg:translate-y-0 2xl:h-[68px] 2xl:w-[136px]"
+            className="absolute left-[50%] top-0 h-[66px] w-[136px] translate-x-[-50%] translate-y-[-50%] lg:static lg:mt-[5px] lg:h-fit lg:w-[100px]  lg:translate-x-0 lg:translate-y-0 2xl:h-[136px] 2xl:w-[136px]"
             unoptimized
           />
         </Link>
