@@ -15,8 +15,8 @@ export const Footer = () => {
 
   return (
     <footer className="delay-2s">
-      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-[92px] lg:max-w-[calc(100%_-_72px)] lg:flex-row lg:justify-between lg:pb-[59px] lg:pt-0 xl:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
-        <Link href="/">
+      <div className="relative mx-auto flex max-w-[calc(100%_-_38px)] flex-col gap-[24px] pb-[41px] pt-0 lg:max-w-[calc(100%_-_72px)] lg:flex-row lg:justify-between lg:pb-[59px] lg:pt-0 xl:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
+        <Link href="/" className="hidden lg:block">
           <Image
             width={136}
             height={66}

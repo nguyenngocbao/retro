@@ -8,8 +8,8 @@ import { Logo } from './components/Logo';
 import './globals.css';
 
 export const metadata = {
-  title: 'Retro Game',
-  description: 'Retro Game'
+  title: 'RetroCraft',
+  description: 'RetroCraft'
 };
 
 const font = Space_Grotesk({
