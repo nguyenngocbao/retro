@@ -4,16 +4,12 @@
 
 html {
   color: #fff;
-  width: 100vw;
   letter-spacing: -0.31px;
 }
 
 main {
   scroll-behavior: smooth;
   scroll-padding-top: 30px;
-}
-
-@layer base {
 }
 
 @layer utilities {

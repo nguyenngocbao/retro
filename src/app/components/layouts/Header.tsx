@@ -17,10 +17,12 @@ export function Header() {
 
   useEffect(() => {
     if (isOpen) {
+      document.documentElement.style.width = '100vw';
       scrollY.current = window.scrollY;
       document.documentElement.style.position = 'fixed';
       document.documentElement.style.top = `${-scrollY.current}px`;
     } else {
+      document.documentElement.style.width = '';
       document.documentElement.style.position = '';
       window.scrollTo(0, scrollY.current);
     }

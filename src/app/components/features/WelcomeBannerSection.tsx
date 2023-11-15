@@ -166,7 +166,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           </div>
         </div>
       </div>
-      <div className="relative mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[100vw]">
+      <div className="relative mx-auto max-w-[calc(100%_-_38px)] overflow-x-hidden xl:mx-[unset] xl:max-w-[100vw]">
         <Button
           variant="secondary"
           onClick={() => onClickNext(bottomSliderRef)}
