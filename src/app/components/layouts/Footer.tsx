@@ -61,14 +61,14 @@ export const Footer = () => {
             >
               {CONTACT_US.label}
             </ContactUsElement>
-            <ul className="flex gap-[16px]">
+            <ul className="flex items-start gap-[16px]">
               {CONTACT_US.children.map((childItem, i) => (
                 <li
                   key={i}
                   className="transition-all hover:scale-x-105 hover:scale-y-110"
                 >
                   <a
-                    className="h-[38px] text-[16px] font-[500] leading-[38px]"
+                    className="flex h-[38px] flex-col items-center text-[16px] font-[500] leading-[38px]"
                     href={String(childItem.value)}
                     target="_blank"
                     rel="noreferrer"
@@ -81,6 +81,9 @@ export const Footer = () => {
                       alt={childItem.label}
                       className="h-[44px] w-[44px]"
                     />
+                    <span className="text-[13px] font-normal">
+                      {childItem.label}
+                    </span>
                   </a>
                 </li>
               ))}

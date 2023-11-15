@@ -61,12 +61,17 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
     value: '',
     children: [
       {
-        label: 'X',
+        label: '',
         value: 'https://twitter.com/RetroCraftio',
         image: '/x.svg'
       },
       {
-        label: 'Telegram',
+        label: 'Channel',
+        value: 'https://t.me/retrocraftio',
+        image: '/telegram.svg'
+      },
+      {
+        label: 'Chat',
         value: 'https://t.me/retrocraftio',
         image: '/telegram.svg'
       }
