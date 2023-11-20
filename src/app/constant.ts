@@ -198,6 +198,20 @@ export const FEATURE_GAMES = {
   ]
 };
 
+export const PARTNERSHIP = {
+  title: 'HOST BY',
+  members: [
+    {
+      name: 'CHAIN LINK',
+      logo: '/partnerships/chain-link-logo.webp'
+    },
+    {
+      name: 'XPLUS',
+      logo: '/partnerships/xplus-logo.webp'
+    }
+  ]
+};
+
 export const JOIN_THE_WORLD = {
   title: 'JOIN THE WORLD OF RETROCRAFT',
   description: `Step into the ultimate retro gaming. 
