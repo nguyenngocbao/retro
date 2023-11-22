@@ -66,6 +66,16 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
         image: '/x.svg'
       },
       {
+        label: '',
+        value: 'https://t.me/RetroCraftglobal',
+        image: '/youtube.svg'
+      },
+      {
+        label: '',
+        value: 'https://t.me/RetroCraftglobal',
+        image: '/gmail.svg'
+      },
+      {
         label: 'Announcement',
         value: 'https://t.me/retrocraftio',
         image: '/telegram.svg'
