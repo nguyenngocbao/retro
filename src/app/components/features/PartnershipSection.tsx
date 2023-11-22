@@ -19,7 +19,7 @@ export const PartnershipSection = () => {
               <Image
                 unoptimized
                 alt={mem.name}
-                className="h-[24px] w-[24px] object-contain 2xl:h-[42px] 2xl:w-[42px]"
+                className="h-[70px] object-contain 2xl:h-[100px]"
                 src={mem.logo}
                 width={525}
                 height={525}
