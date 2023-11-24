@@ -218,6 +218,14 @@ export const PARTNERSHIP = {
     {
       name: '',
       logo: '/partnerships/xplus.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/r.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/dpt.png'
     }
   ]
 };
