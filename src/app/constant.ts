@@ -66,14 +66,24 @@ export const FOOTER_MENU_OPTIONS: Option[] = [
         image: '/x.svg'
       },
       {
-        label: 'Announcement',
+        label: 'Group',
+        value: 'https://t.me/RetroCraftglobal',
+        image: '/telegram.svg'
+      },
+      {
+        label: 'Channel',
         value: 'https://t.me/retrocraftio',
         image: '/telegram.svg'
       },
       {
-        label: 'Group',
-        value: 'https://t.me/RetroCraftglobal',
-        image: '/telegram.svg'
+        label: '',
+        value: 'https://www.youtube.com/@RetroCraft-global',
+        image: '/youtube.svg'
+      },
+      {
+        label: '',
+        value: 'mailto:team@retrocraft.io',
+        image: '/gmail.svg'
       }
     ]
   }
@@ -194,6 +204,28 @@ export const FEATURE_GAMES = {
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
+    }
+  ]
+};
+
+export const PARTNERSHIP = {
+  title: 'PARTNERSHIP',
+  members: [
+    {
+      name: '',
+      logo: '/partnerships/gem_insights.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/xplus.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/r.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/dpt.png'
     }
   ]
 };

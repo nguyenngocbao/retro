@@ -2,6 +2,7 @@ import { ExploreSection } from './components/features/ExploreSection';
 import { FeatureGamesSections } from './components/features/FeatureGamesSection';
 import { GameOverview } from './components/features/GameOverview';
 import { JoinTheWorldSection } from './components/features/JoinTheWorldSection';
+import { PartnershipSection } from './components/features/PartnershipSection';
 import { WelcomeBanner } from './components/features/WelcomeBannerSection';
 
 export default function () {
@@ -11,6 +12,7 @@ export default function () {
       <ExploreSection className="overflow-x-hidden" />
       <GameOverview />
       <FeatureGamesSections />
+      <PartnershipSection />
       <JoinTheWorldSection />
     </main>
   );

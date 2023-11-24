@@ -81,7 +81,7 @@ export const Footer = () => {
                       alt={childItem.label}
                       className="h-[44px] w-[44px]"
                     />
-                    <span className="text-[10px] font-normal">
+                    <span className="text-[8px] font-normal">
                       {childItem.label}
                     </span>
                   </a>
