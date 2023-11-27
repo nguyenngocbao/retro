@@ -21,8 +21,9 @@ export const HEADER_MENU_OPTIONS: Option[] = [
   },
   {
     label: 'BUY $RETRO',
-    value: '',
-    blank: false
+    value:
+      'https://pancakeswap.finance/swap?outputCurrency=0xD6eF2222Cc850fDc7Ee30F2B2D5384e0167700A3&chainId=56',
+    blank: true
   }
 ];
 

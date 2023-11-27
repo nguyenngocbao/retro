@@ -130,17 +130,18 @@ export const Menu: FC<MenuProps> = ({ isOpen, onClose }) => {
             isActive(CONNECT_OPTION.value) && 'text-primary3'
           )}
         >
-          <div
+          <Link
             className="flex h-full w-full items-center justify-center"
-            // href={String(CONNECT_OPTION.value)}
+            href={String(CONNECT_OPTION.value)}
+            target={CONNECT_OPTION.blank ? '_blank' : ''}
+            rel={CONNECT_OPTION.blank ? 'noreferrer' : ''}
           >
             <span>BUY</span>
             <span className="ml-[4px] mr-[2px] transition-all group-hover:text-gr group-hover:flip-y-360 group-hover:text-shadow">
               $
             </span>
             <span>RETRO</span>
-            <CommingSoon className="absolute right-[-1px] top-[-1px] 2xl:right-[-2px] 2xl:top-[-2px] 2xl:h-[62px] 2xl:w-[62px]" />
-          </div>
+          </Link>
         </li>
       </ul>
     </section>
