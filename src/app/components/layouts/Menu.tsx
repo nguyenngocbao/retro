@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { FC, HTMLAttributes, useState } from 'react';
 
 import { CloseIcon } from '@/app/assets/icons/Close';
-import { CommingSoon } from '@/app/assets/icons/CommingSoon';
 import { MenuArrowDownIcon } from '@/app/assets/icons/MenuArrowDown';
 import { HEADER_MENU_OPTIONS } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
