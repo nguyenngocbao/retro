@@ -214,6 +214,10 @@ export const PARTNERSHIP = {
   members: [
     {
       name: '',
+      logo: '/partnerships/tcvn.png'
+    },
+    {
+      name: '',
       logo: '/partnerships/gem_insights.png'
     },
     {
@@ -227,6 +231,18 @@ export const PARTNERSHIP = {
     {
       name: '',
       logo: '/partnerships/dpt.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/trikon.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/botnet.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/auto.png'
     }
   ]
 };
