@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { FC, HTMLAttributes, useRef, useState } from 'react';
 
+// import { JoinTo } from '@/app/assets/icons/JoinTo';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
 import { RetrocraftIcon } from '@/app/assets/icons/Retrocraft';
 import { RightArrowIcon } from '@/app/assets/icons/RightArrow';
@@ -83,9 +84,9 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
             <Link href="https://forms.gle/QzKCcn2kw4A2R32A6">
               <Button
                 variant="secondary"
-                className="h-[45px] w-[310px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[4px] 2xl:text-[32px] 2xl:leading-[48px]"
+                className="h-[45px] w-[310px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[460px] 2xl:text-[32px] 2xl:leading-[48px]"
               >
-                {/* <Window className="2xl:h-[39px] 2xl:w-[39px]" /> */}
+                {/* <JoinTo className="2xl:h-[39px] 2xl:w-[39px]" /> */}
                 <span>SIGN UP for TESTNET</span>
               </Button>
             </Link>
