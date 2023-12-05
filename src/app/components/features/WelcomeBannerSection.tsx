@@ -80,21 +80,21 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
           </h1>
           <RetrocraftIcon className="mb-[23px] h-[117px] w-[246px] 2xl:mb-[32px] 2xl:h-[205px] 2xl:w-[429px]" />
           <p className="mb-[14px] text-[16px] font-bold leading-[22px] lg:uppercase 2xl:mb-[24px] 2xl:text-[20px] 2xl:leading-[28px]">
-            The ultimate retro gaming experience. Relive classics and earn for
-            real in RetroCraft.
+            Be among the first to explore our immersive world & get the chance
+            to win 50K tokens!.
           </p>
           <div className="mb-[13px] 2xl:mb-[21px]">
-            <Link href="https://whitepaper.retrocraft.io/how-to-start-playing-retrocraft/how-to-download-and-play-retrocraft">
+            <Link href="https://forms.gle/QzKCcn2kw4A2R32A6">
               <Button
                 variant="secondary"
-                className="h-[45px] w-[169px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[247px] 2xl:text-[32px] 2xl:leading-[48px]"
+                className="h-[45px] w-[310px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[460px] 2xl:text-[32px] 2xl:leading-[48px]"
               >
-                <Window className="2xl:h-[39px] 2xl:w-[39px]" />
-                <span>PC</span>
+                {/* <Window className="2xl:h-[39px] 2xl:w-[39px]" /> */}
+                <span>SIGN UP for TESTNET</span>
               </Button>
             </Link>
           </div>
-          <div className="mb-[13px] flex gap-[13px] 2xl:gap-[19px]">
+          {/* <div className="mb-[13px] flex gap-[13px] 2xl:gap-[19px]">
             <Button
               variant="secondary"
               disabled
@@ -113,7 +113,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
               <span>IOS</span>
               <CommingSoon className="absolute right-[-1px] top-[-1px] 2xl:h-[62px] 2xl:w-[62px]" />
             </Button>
-          </div>
+          </div> */}
         </div>
         <div
           className="md:mx-[50px] lg:relative lg:mx-[unset] lg:min-h-[391px] lg:max-w-[calc(100vw_-_562px)] lg:flex-[1] xl:max-w-[calc(calc(100vw_-_445px)_-_calc(100vw_-_calc(100vw_-_300px)))] 2xl:min-h-[530px] 2xl:max-w-[calc(calc(100vw_-_626px)_-_calc(100vw_-_1227px))]"
