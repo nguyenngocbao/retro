@@ -29,13 +29,6 @@ export const PartnershipSection = () => {
             </div>
           );
         })}
-        <a href="https://chain.link/badge">
-          {' '}
-          <img
-            src="https://chain.link/badge-randomness-white"
-            alt="randomness secured with chainlink"
-          />
-        </a>
       </div>
     </section>
   );
