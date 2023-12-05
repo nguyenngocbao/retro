@@ -3,13 +3,9 @@
 import Link from 'next/link';
 import { FC, HTMLAttributes, useRef, useState } from 'react';
 
-import { Android } from '@/app/assets/icons/Android';
-import { CommingSoon } from '@/app/assets/icons/CommingSoon';
-import { IOS } from '@/app/assets/icons/IOS';
 import { LeftArrowIcon } from '@/app/assets/icons/LeftArrow';
 import { RetrocraftIcon } from '@/app/assets/icons/Retrocraft';
 import { RightArrowIcon } from '@/app/assets/icons/RightArrow';
-import { Window } from '@/app/assets/icons/Window';
 import { WELCOME_BANNER } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
@@ -87,7 +83,7 @@ export const WelcomeBanner: FC<HTMLAttributes<HTMLElement>> = ({
             <Link href="https://forms.gle/QzKCcn2kw4A2R32A6">
               <Button
                 variant="secondary"
-                className="h-[45px] w-[310px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[460px] 2xl:text-[32px] 2xl:leading-[48px]"
+                className="h-[45px] w-[310px] gap-[9px] text-[20px] leading-[28px] 2xl:h-[65px] 2xl:w-[4px] 2xl:text-[32px] 2xl:leading-[48px]"
               >
                 {/* <Window className="2xl:h-[39px] 2xl:w-[39px]" /> */}
                 <span>SIGN UP for TESTNET</span>
