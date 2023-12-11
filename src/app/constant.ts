@@ -212,10 +212,10 @@ export const FEATURE_GAMES = {
 export const PARTNERSHIP = {
   title: 'PARTNERSHIP',
   members: [
-    {
-      name: '',
-      logo: '/partnerships/tcvn.png'
-    },
+    // {
+    //   name: '',
+    //   logo: '/partnerships/tcvn.png'
+    // },
     {
       name: '',
       logo: '/partnerships/gem_insights.png'
@@ -242,7 +242,35 @@ export const PARTNERSHIP = {
     },
     {
       name: '',
+      logo: '/partnerships/vc.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/hikemove.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/brc.png'
+    },
+    {
+      name: '',
       logo: '/partnerships/auto.png'
+    }
+  ]
+};
+
+export const POWEDBY = {
+  title: 'POWERED BY',
+  members: [
+    {
+      name: '',
+      link: 'https://twitter.com/chainlink/status/1733933898470396267?s=46&t=F52SV87pKOBZGOOd9wkQSQ',
+      logo: '/powedof/chainlink1.png'
+    },
+    {
+      name: '',
+      link: '',
+      logo: '/powedof/bnbchain2.png'
     }
   ]
 };
