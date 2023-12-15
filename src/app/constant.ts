@@ -255,6 +255,14 @@ export const PARTNERSHIP = {
     {
       name: '',
       logo: '/partnerships/auto.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/vertex.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/AGD.png'
     }
   ]
 };
