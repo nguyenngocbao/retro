@@ -201,7 +201,7 @@ export const FEATURE_GAMES = {
     },
     {
       image: '/supper-mario-bros-bg.png',
-      name: 'SUPPER MARIO BROS',
+      name: 'SUPER MARIO BROS',
       shortDesc: 'desc',
       learnMore:
         'https://whitepaper.retrocraft.io/what-is-retrocraft-games/game-world'
