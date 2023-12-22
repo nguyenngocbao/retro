@@ -218,6 +218,10 @@ export const PARTNERSHIP = {
     // },
     {
       name: '',
+      logo: '/partnerships/arena_game.png'
+    },
+    {
+      name: '',
       logo: '/partnerships/gem_insights.png'
     },
     {
@@ -273,12 +277,17 @@ export const POWEDBY = {
     {
       name: '',
       link: 'https://twitter.com/chainlink/status/1733933898470396267?s=46&t=F52SV87pKOBZGOOd9wkQSQ',
-      logo: '/powedof/chainlink1.png'
+      logo: '/powedof/chainlink.png'
     },
     {
       name: '',
       link: '',
-      logo: '/powedof/bnbchain2.png'
+      logo: '/powedof/bnbchain.png'
+    },
+    {
+      name: '',
+      link: '',
+      logo: '/powedof/myria.png'
     }
   ]
 };

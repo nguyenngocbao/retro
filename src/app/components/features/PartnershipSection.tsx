@@ -11,7 +11,7 @@ export const PartnershipSection = () => {
       <div className="flex h-[69px] w-[263px] items-center justify-center bg-bg-title-2 bg-contain bg-no-repeat text-[20px] font-bold leading-[28px] text-black 2xl:ml-[unset] 2xl:h-[135px] 2xl:w-[512px] 2xl:text-[40px] 2xl:leading-[48px]">
         {POWEDBY.title}
       </div>
-      <div className="grid grid-cols-2 gap-[10px] md:gap-[30px] 2xl:gap-[40px]">
+      <div className="grid grid-cols-3 gap-[10px] md:gap-[30px] 2xl:gap-[40px]">
         {POWEDBY.members.map(mem => {
           return (
             <div
