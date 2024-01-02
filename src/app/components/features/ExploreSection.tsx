@@ -6,6 +6,7 @@ import { GAME_EXPORES } from '@/app/constant';
 import { mergeClasses } from '@/app/utils';
 
 import { GameExpore } from './GameExpore';
+import { NftMinting } from './NftMinting';
 
 export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
   className,
@@ -84,7 +85,7 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
       </section>
       <section
         className={mergeClasses(
-          'flex flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
+          'flex flex-col items-center justify-center  gap-[27px] bg-game1-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game1-bg-pc lg:px-0 2xl:h-[800px] 2xl:pb-[139px]',
           className
         )}
         {...props}
@@ -103,6 +104,29 @@ export const ExploreSection: FC<HTMLAttributes<HTMLElement>> = ({
             levelToPlayContent={GAME_EXPORES.CAR_RACING.levelToPlayContent}
             childrenClassName2="hidden-ani-from-left"
             childrenClassName1="hidden-ani-from-right"
+          />
+        </div>
+      </section>
+      <section
+        className={mergeClasses(
+          'flex flex-col items-center justify-center  gap-[27px] bg-game3-bg bg-cover bg-bottom bg-no-repeat py-[90px] md:py-[50px] lg:bg-game3-bg-pc lg:px-0 2xl:py-[139px]',
+          className
+        )}
+        {...props}
+      >
+        <div className="mx-auto max-w-[calc(100%_-_38px)] lg:max-w-[calc(100%_-_300px)] 2xl:max-w-[1227px]">
+          <NftMinting
+            imagePath={GAME_EXPORES.NFT_MINTNING.image}
+            imageAlt={GAME_EXPORES.NFT_MINTNING.description}
+            titleIcon={GAME_EXPORES.NFT_MINTNING.icon}
+            name={GAME_EXPORES.NFT_MINTNING.name}
+            desc={GAME_EXPORES.NFT_MINTNING.description}
+            buttonName={GAME_EXPORES.NFT_MINTNING.buttonName}
+            buttonLink={GAME_EXPORES.NFT_MINTNING.buttonLink}
+            levelToPlay={GAME_EXPORES.NFT_MINTNING.levelToPlay}
+            levelToPlayContent={GAME_EXPORES.NFT_MINTNING.levelToPlayContent}
+            childrenClassName1="hidden-ani-from-left"
+            childrenClassName2="hidden-ani-from-right"
           />
         </div>
       </section>

@@ -20,6 +20,11 @@ export const HEADER_MENU_OPTIONS: Option[] = [
     blank: true
   },
   {
+    label: 'NFT MINTING',
+    value: 'https://sbnft.retrocraft.io/',
+    blank: true
+  },
+  {
     label: 'BUY $RETRO',
     value:
       'https://pancakeswap.finance/swap?outputCurrency=0xD6eF2222Cc850fDc7Ee30F2B2D5384e0167700A3&chainId=56',
@@ -166,6 +171,17 @@ export const GAME_EXPORES = {
     levelToPlayContent: 'To Earn',
     buttonLink: '',
     buttonName: 'SKILL TO EARN'
+  },
+  NFT_MINTNING: {
+    name: 'NFT MINTING',
+    icon: CrossbowIcon,
+    image: '/nft-minting.png',
+    description:
+      "Unlock exclusive NFTs and become part of the RetroCraft legacy. It's not just minting; it's a thrilling adventure into the GameFi world. Don't miss out!",
+    levelToPlay: 'COLLECT',
+    levelToPlayContent: 'To Earn',
+    buttonLink: '',
+    buttonName: 'COLLECT TO EARN'
   }
 };
 

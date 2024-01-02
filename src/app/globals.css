@@ -215,6 +215,14 @@ main {
   animation: no-scroll 0.5s both 1.5s;
 }
 
+.color-secondary{
+  color: #ffbe53;
+}
+
+.boder-secondary{
+  border: 1px solid #ffbe53;
+}
+
 .logo-loading {
   fill: transparent;
   stroke: #ffbe53;
