@@ -267,6 +267,10 @@ export const PARTNERSHIP = {
     {
       name: '',
       logo: '/partnerships/AGD.png'
+    },
+    {
+      name: '',
+      logo: '/partnerships/bitmetis.png'
     }
   ]
 };
