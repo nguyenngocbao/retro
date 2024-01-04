@@ -223,6 +223,10 @@ main {
   border: 1px solid #ffbe53;
 }
 
+.border-button-hover{
+  
+}
+
 .logo-loading {
   fill: transparent;
   stroke: #ffbe53;

@@ -21,7 +21,7 @@ export const HEADER_MENU_OPTIONS: Option[] = [
   },
   {
     label: 'NFT MINTING',
-    value: 'https://sbnft.retrocraft.io/',
+    value: 'https://myria-nft.retrocraft.io/',
     blank: true
   },
   {
