@@ -218,59 +218,73 @@ export const PARTNERSHIP = {
     // },
     {
       name: '',
-      logo: '/partnerships/arena_game.png'
+      logo: '/partnerships/arena_game.png',
+      link: 'https://arenavs.com/'
     },
     {
       name: '',
-      logo: '/partnerships/gem_insights.png'
+      logo: '/partnerships/gem_insights.png',
+      link: 'https://geminsights.substack.com'
     },
     {
       name: '',
-      logo: '/partnerships/xplus.png'
+      logo: '/partnerships/xplus.png',
+      link: 'https://xplus.com'
     },
     {
       name: '',
-      logo: '/partnerships/r.png'
+      link: 'https://www.xland.vip/',
+      logo: '/partnerships/xland.png'
     },
     {
       name: '',
-      logo: '/partnerships/dpt.png'
+      logo: '/partnerships/r.png',
+      link: 'https://payrue.com'
     },
     {
       name: '',
-      logo: '/partnerships/trikon.png'
+      logo: '/partnerships/dpt.png',
+      link: 'https://app.diviner.finance'
     },
     {
       name: '',
-      logo: '/partnerships/botnet.png'
+      logo: '/partnerships/trikon.png',
+      link: 'https://trikon.io'
     },
     {
       name: '',
-      logo: '/partnerships/vc.png'
+      logo: '/partnerships/vc.png',
+      link: 'https://www.vcgamers.com/'
     },
     {
       name: '',
-      logo: '/partnerships/hikemove.png'
+      logo: '/partnerships/hikemove.png',
+      link: 'https://hikemove.com'
     },
     {
       name: '',
-      logo: '/partnerships/brc.png'
+      logo: '/partnerships/brc.png',
+      link: 'https://brclife.com'
     },
     {
       name: '',
-      logo: '/partnerships/auto.png'
+      logo: '/partnerships/auto.png',
+      link: 'https://twitter.com/Autosultan_team'
     },
     {
       name: '',
-      logo: '/partnerships/vertex.png'
+      logo: '/partnerships/vertex.png',
+      link: 'https://vertexprotocol.com/'
     },
     {
       name: '',
-      logo: '/partnerships/AGD.png'
+      logo: '/partnerships/AGD.png',
+      link: 'https://avisagamesguild.com/'
     },
     {
       name: '',
-      logo: '/partnerships/bitmetis.png'
+      logo: '/partnerships/bitmetis.png',
+      link: 'https://bitmetis.io'
     }
   ]
 };
@@ -285,13 +299,38 @@ export const POWEDBY = {
     },
     {
       name: '',
-      link: '',
+      link: 'https://www.bnbchain.org/',
       logo: '/powedof/bnbchain.png'
     },
     {
       name: '',
-      link: '',
+      link: 'https://myria.com',
       logo: '/powedof/myria.png'
+    }
+  ]
+};
+export const MENTIONEDBY = {
+  title: 'MENTIONED BY',
+  members: [
+    {
+      name: '',
+      link: 'https://finance.yahoo.com/news/retrocraft-emerges-ultimate-retro-gaming-180000978.html?guccounter=1',
+      logo: '/mentionedby/yahoo.png'
+    },
+    {
+      name: '',
+      link: 'https://blockchainhub.kr/bbs/board.php?bo_table=promotion&wr_id=86904',
+      logo: '/mentionedby/blockchainhub.png'
+    },
+    {
+      name: '',
+      link: 'https://www.ddengle.com/index.php?mid=ann&document_srl=19529858',
+      logo: '/mentionedby/ddengle.png'
+    },
+    {
+      name: '',
+      link: 'https://cobak.co.kr/community/145/post/1101474',
+      logo: '/mentionedby/cobak.png'
     }
   ]
 };
