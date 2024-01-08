@@ -315,7 +315,7 @@ export const MENTIONEDBY = {
     {
       name: '',
       link: 'https://finance.yahoo.com/news/retrocraft-emerges-ultimate-retro-gaming-180000978.html?guccounter=1',
-      logo: '/mentionedby/yahoo.png'
+      logo: '/mentionedby/yahoo1.png'
     },
     {
       name: '',
